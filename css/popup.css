@@ -1,0 +1,260 @@
+/* <MODAL WINDOW> */
+#modal_bg{
+    position: fixed; top:0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #555; /*! FOR IE*/ 
+    background-color: rgba(0,0,0, 0.75);
+    z-index: 9999;
+    opacity: 0; filter:alpha(opacity=0);
+    display: none;
+}
+#modal_close_block{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+#modal_dialog_block{
+    width: 270px;
+    background: #fff;
+    position: relative;
+    text-align: left;
+    padding: 35px;
+    opacity: 0; filter:alpha(opacity=0);
+    box-shadow: rgba(0,0,0, 0.3) 0px 0px 10px;
+    border-radius: 2px;
+    z-index: 2;
+}
+#modal_dialog_title{ font-size: 24px; font-family: 'PT Sans', sans-serif; }
+#modal_dialog_content{ 
+    /*line-height: 20px;*/ 
+    padding-top: 20px; 
+    font-size: 18px; font-family: 'PT Sans', sans-serif;
+}
+#modal_dialog_close{
+    position: absolute;
+    background-image: url(/img/close_modal_btn_2.png);
+    width: 58px; height: 58px;
+    right:0px; top:0px;
+    cursor: pointer;
+    z-index: 1001;
+}
+#modal_loader{ background:  url(/img/modal-loader.gif) center center no-repeat; height: 15px; margin: 20px 20px; }
+/* </MODAL WINDOW> */
+
+
+.popup_form .popup_input_title{
+    color: #6a6a6a;
+    font-size: 14px;
+}
+.popup_form input{
+    background: #f4f4f4;
+    border: #dbdbdb 1px solid;
+    border-radius: 2px;
+    width: 235px; height: 35px;
+    padding: 0px 15px 0px 15px;
+    margin: 8px 0px 25px 0px;
+    font-size: 18px;
+}
+.popup_form .action_btn_block .action_btn{
+    display: inline-block;
+    background: #006fa9;
+    border-radius: 2px;
+    border: none;
+    height: 35px;
+    padding: 0px 30px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.popup_form .action_btn_block .action_btn:hover{ background: #005b89}
+.popup_form .action_btn_block a{
+    display: inline-block;
+    margin-top: 10px;
+    float: right;
+    color: #267cab;
+    font-size: 14px;
+    text-decoration: none;
+}
+.popup_form .action_btn_block a:hover{ text-decoration: underline;}
+
+/*<contact>*/
+.popup_contact_block{
+    width: 700px; height: 495px;
+}
+.popup_contact_block .ppc_left_block{
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    width: 280px; height: 495px;
+}
+.popup_contact_block .ppc_left_block a{
+    color: #267cab;
+    text-decoration: none;
+}
+.popup_contact_block .ppc_left_block a:hover{ text-decoration: underline; }
+.popup_contact_block .ppc_left_block div{ 
+    margin: 40px 0px 0px 35px;
+    color: #373737;
+    font-size: 14px;
+    line-height: 24px;
+    background-repeat: no-repeat;
+}
+.popup_contact_block .ppc_title{
+    margin-top: 35px !important;
+    font-size: 24px !important;
+    font-family: 'PT Sans', sans-serif !important;
+}
+.ppc_address{
+    background: url('/img/contact_ico_address_black.png') 0px 5px;
+    padding-left: 25px;
+    margin-top: 25px !important;
+}
+.ppc_phone{ 
+    background: url('/img/contact_ico_phone_black.png') 0px 5px;
+    padding-left: 25px;
+}
+.ppc_mail{ 
+    background: url('/img/contact_ico_mail_black.png') 0px 6px; 
+    padding-left: 25px;
+}
+.popup_contact_block .ppc_right_block{
+    display: table-cell;
+    width: 420px; height: 495px;
+    background-image: url('/img/modal-loader.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*</contact>*/
+
+/*<registration_lang>*/
+#registration_lang{
+    
+}
+#registration_lang .rl_left{
+    display: table-cell;
+    width: 260px;
+}
+#registration_lang .rl_left input{
+    width: 190px;
+    vertical-align: top;
+}
+#registration_lang .rl_right{
+    /*border: #c00 1px dashed;*/
+    display: table-cell;
+    width: 230px;
+    vertical-align: top;
+}
+#registration_lang .rl_right .rl_test_block{
+    /*border: #0c0 1px dashed;*/
+    border-left: #ececec 1px solid;
+    padding-left: 40px;
+    margin-top: 20px;
+    height: 185px;
+    font-size: 14px;
+    line-height: 18px;
+}
+#registration_lang .rl_right a.rlt_title{
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: #006fa9;
+    padding-left: 45px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#registration_lang .rl_right a.rlt_title:hover{
+    color: #030303;
+    text-decoration: underline;
+}
+#registration_lang .rl_right a.rlt_title:hover .rlt_title_img{
+    background-image: url(/img/course_btn_ico/gray.png);
+}
+#registration_lang .rl_right .rlt_title_img{
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 30px; height: 37px;
+    background-image: url(/img/course_btn_ico/blue.png);
+    background-position: -60px 0px;
+}
+
+.popap_speak{
+    display: block;
+    height: 50px;
+    background: url('/img/popup_speak_ico.png') no-repeat 0px 0px;
+    padding-left: 50px;
+    color: #267cab;
+    font-size: 18px; font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+}
+.popap_speak:hover{ text-decoration: underline; }
+
+/*</registration_lang>*/
+
+
+/*<test>*/
+.test_text_block{
+    padding: 0px 0px 36px 0px;
+    margin-bottom: 30px;
+    border-bottom: #ececec 1px solid;
+    font-size: 18px; font-family: 'PT Sans', sans-serif;
+}
+.last_test_text_block{
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/*</test>*/
+
+/*<autocomplete>*/
+.ui-state-active{
+    background-image: none !important;
+}
+/*</autocomplete>*/
+
+
+/*<teachthem>*/
+.teachthem_pay_select{ 
+    /*border: #c00 1px dashed;*/
+    height: 50px;
+}
+.teachthem_pay_select .tps_td{
+    display: table-cell;
+    width: 120px; height: 43px;
+    padding-top: 7px;
+    float: left;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #6a6a6a;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: top;
+    font-weight: bold;
+}
+.teachthem_pay_select .tps_td_active, .teachthem_pay_select .tps_td:hover{
+    background: #ededed;
+}
+
+.teachthem_pay_select .tps_td_spacer, .teachthem_pay_select .tps_td_spacer:hover{
+    width: 26px; 
+    cursor: default;
+    background: none;
+}
+
+.teachthem_pay_select .tps_td .tps_td_tbl{ display: table;}
+.teachthem_pay_select .tps_td .tps_td_tbl_td{ display: table-cell; vertical-align: top;}
+.teachthem_pay_select input{
+    width: auto; height: auto;
+    margin: 2px 10px 0px 10px;
+}
+/*</teachthem>*/
+
+

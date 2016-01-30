@@ -1,0 +1,66 @@
+/* 
+    Document   : new_dark
+    Created on : 28.09.2012, 11:48:34
+    Author     : Skybee
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.products-grid li.item{ border: solid 1px #d4dadd; }
+.products-grid .product-image{ border-color: #d4dadd; }
+.product-collateral .box-collateral{ border: solid 1px #d4dadd; }
+.category_text .show_full_text{ border-color: #d4dadd; }
+.my_breadcrumb{ border-color: #d4dadd; }
+#ajax_favorite .ajax_fav_block{ border-color: #d4dadd; }
+.product-essential{ border-color: #d4dadd; }
+.ajax_basket .ab_goods_block{ border-color: #d4dadd; }
+.ajax_basket .ab_goods_block .ab_right_block td input{ border-color: #d4dadd; }
+.ajax_order table td input, .ajax_order table td textarea{ border-color: #d4dadd; }
+.goods_count input{ border-color: #d4dadd; }
+.actions input{ border-color: #d4dadd; }
+
+.page-title{
+    background-image: url('/img/title_block_bg.png');
+    background-repeat: repeat-x;
+    border: solid 1px #d4dadd;
+    border-radius: 4px;
+}
+.page-title h2{ 
+    background: none;
+    text-shadow: #fff 1px 1px 0px;
+    color: #0E3A5A;
+}
+
+#nav div.child_cat a{
+    /*background-image: url('/img/left_menu_second_level_bg.png');*/
+    background-color: #e6eef2;
+    margin-bottom: 1px;
+    color: #545a5e;
+    border-color: #d4dadd;
+}
+
+#nav  li  a{
+    background-image: none;
+/*    background-image: url('/img/left_menu_first_level_bg_2.png');
+    background-repeat: repeat-x;*/
+    background-color: #e6eef2;
+    border: solid 1px #d4dadd;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    color: #0E3A5A;
+    height: 30px; 
+    padding: 0px 0px 0px 12px;
+    line-height: 30px;
+}
+#nav  li  a:hover{
+    border: solid 1px #0E3A5A !important;
+    background: none;
+    background-color: #0E3A5A;
+}
+/*#nav  li  a  span{ 
+    background: none; 
+    padding: 8px 0 7px 12px; 
+}
+#nav  li  a  span:hover{
+    background: none; 
+}*/

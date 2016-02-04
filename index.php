@@ -1,8 +1,6 @@
 <?php
 
 header("Content-type:text/html;Charset=utf-8");
-
-//if( $_SERVER['REMOTE_ADDR'] == '178.150.106.188' && rand(1,100) <= 50 ) sleep(mt_rand(5, 20)) ;
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -21,8 +19,8 @@ header("Content-type:text/html;Charset=utf-8");
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-//	define('ENVIRONMENT', 'development');
-        define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', 'development');
+//        define('ENVIRONMENT', 'production');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

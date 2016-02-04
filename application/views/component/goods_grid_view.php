@@ -6,11 +6,11 @@
 
 
 <div class="new_products">
-<? if( isset($cat_info) ): ?>
-    <div class="page-title"><h2><?=$cat_info['name']?> / Товары: <? if($page_nmbr > 1 ) echo "стр. {$page_nmbr}" ?></h2></div>                                 
-<? endif; ?>
+<?php if( isset($cat_info) ): ?>
+    <div class="page-title"><h2><?=$cat_info['name']?> / Товары: <?php if($page_nmbr > 1 ) echo "стр. {$page_nmbr}" ?></h2></div>                                 
+<?php endif; ?>
 
-<? if( isset($order_val) ): ?>    
+<?php if( isset($order_val) ): ?>    
 <div id="order_goods_block" rel="<?=$order_val?>" >
     <span>Упорядочить: &nbsp;</span>
 <!--    <a href="#"   id="price">Цена</a>
@@ -21,15 +21,15 @@
     <a href="/category/<?=$cat_name?>/1/order/rank/"    id="rank">Популярность</a>
     <a href="/category/<?=$cat_name?>/1/order/name/"    id="name">Название</a>
 </div>
-<? endif; ?>    
+<?php endif; ?>    
     
-<?    
+<?php    
     $i = 0;
     while( $i < $cnt_goods ):
 ?>
 <ul class="products-grid">
-    <? for($ii=0; $ii<3 && $i<$cnt_goods; $ii++, $i++): ?>
-        <li class="item <? if($ii == 0) echo 'first'; ?>">
+    <?php for($ii=0; $ii<3 && $i<$cnt_goods; $ii++, $i++): ?>
+        <li class="item <?php if($ii == 0) echo 'first'; ?>">
             <h3 class="product-name">
                 <!--<a href="#" ><?=$goods_list[$i]['name']?></a>-->
                 <a href="/goods/<?=$goods_list[$i]['id']?>/<?=$goods_list[$i]['url_name']?>/" ><?=$goods_list[$i]['name']?></a>
@@ -62,19 +62,19 @@
                 </button>
             </div>
         </li>
-    <? endfor; ?>
+    <?php endfor; ?>
 </ul>
-<? endwhile; ?>    
+<?php endwhile; ?>    
 </div>
 
 
 
-<? if( isset($goods_info) ): ?>
+<?php if( isset($goods_info) ): ?>
 <div class="shipping_btn_block">
     <!--<a href="#" class="shipping_btn show_all_goods_btn">Показать все товары этой категории</a>-->
     <a href="/category/<?= $breadcrumb_list[ count($breadcrumb_list)-1 ]['url_name']?>/" class="shipping_btn show_all_goods_btn">Показать все товары этой категории</a>
 </div>
-<? endif; ?>
+<?php endif; ?>
 
 
 
@@ -82,23 +82,23 @@
     <strong><?= get_citty_str(); ?></strong>
 </div>
 
-<? if( isset($pager_ar) ): ?>
+<?php if( isset($pager_ar) ): ?>
 <div class="page-title">
     <h2>
     <div class="goods_pager">
         <ul>
-            <? foreach($pager_ar as $page): ?>
+            <?php foreach($pager_ar as $page): ?>
             <li>
-                <? if($page != $page_nmbr && $page != '...'): ?>
+                <?php if($page != $page_nmbr && $page != '...'): ?>
                 <!--<a href="#"><?=$page?></a>-->
                 <a href="/category/<?=$cat_name?>/<?=$page?>/<?=$link_order?>"><?=$page?></a>
-                <? else: ?>
+                <?php else: ?>
                 <?=$page?>
-                <? endif;?>
+                <?php endif;?>
             </li>
-            <? endforeach;?>
+            <?php endforeach;?>
         </ul>
     </div>
     </h2>
 </div>
-<? endif; ?>
+<?php endif; ?>

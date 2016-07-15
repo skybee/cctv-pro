@@ -1,0 +1,228 @@
+/* <MODAL WINDOW> */
+#modal_bg{
+    position: fixed; top:0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #555; /*! FOR IE*/ 
+    background-color: rgba(0,0,0, 0.6);
+    z-index: 9999;
+    opacity: 0; filter:alpha(opacity=0);
+    display: none;
+}
+#modal_dialog_block{
+    min-width: 460px;
+    max-width: 700px;
+    max-height: 90%;
+    overflow: auto;
+    background: #fff;
+    color: #777f84;
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    opacity: 0; filter:alpha(opacity=0);
+    box-shadow: rgba(0,0,0, 0.5) 0px 0px 20px;
+    border-radius: 3px;
+}
+#modal_dialog_title{ font-size: 16px; font-weight: bold; }
+#modal_dialog_content{ line-height: 20px; padding-top: 20px; }
+#modal_dialog_close{
+    position: absolute;
+    background-image: url(/img/close_modal_btn.png);
+    width: 10px; height: 10px;
+    right:10px; top:10px;
+    cursor: pointer;
+}
+#modal_loader{ background:  url(/img/modal-loader.gif) center center no-repeat; height: 15px; }
+/* </MODAL WINDOW> */
+
+/* <basket> */
+.ajax_basket{
+    max-height: 400px;
+    overflow: auto;
+}
+.ajax_basket .ab_goods_block{
+    border: solid 1px #E6ECF0;
+    border-radius: 4px;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    height: 70px;
+    
+    padding-right: 160px;
+}
+.ajax_basket .ab_goods_block .img_block{
+/*    border: 1px dashed #a00;*/
+    float: left;
+    height: 60px;
+    width: 60px;
+    margin: 5px 0px 0px 5px;
+}
+.ajax_basket .ab_goods_block .img_block td{ vertical-align: middle; text-align: center; height: 60px; width: 60px;}
+.ajax_basket .ab_goods_block .img_block td img{
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.ajax_basket .ab_goods_block .ab_title_desc{
+    /*float: left;*/
+    min-width: 250px;
+}
+
+.ajax_basket .ab_goods_block .ab_title{
+    /*border: 1px dashed #a00;*/
+    /*position: absolute;*/
+    /*width: 350px;*/
+    /*height: 15px;*/
+    /*top:5px;*/
+    /*left: 75px;*/
+    font-size: 14px;
+    
+    position: relative;
+    left: 10px;
+}
+.ajax_basket .ab_goods_block .ab_title a{ text-decoration: none; font-size: 16px;  }
+.ajax_basket .ab_goods_block .ab_title a:hover{ text-decoration: underline; }
+
+.ajax_basket .ab_goods_block .ab_description{
+/*    border: 1px dashed #0a0;*/
+    overflow: hidden;
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*min-width: 200px;*/
+    /*max-width: 350px;*/
+    height: 42px;
+/*    top: 25px;
+    left: 75px;*/
+    font-size: 13px;
+    line-height: 14px;
+    
+    position: relative;
+    /*margin-top: 7px;*/
+    left: 10px;
+}
+.ajax_basket .ab_goods_block .ab_right_block{
+/*    border: 1px dashed #00a;*/
+    position: absolute;
+    top:5px; right: 5px;
+    height: 60px;
+    width: 135px;
+}
+.ajax_basket .ab_goods_block .ab_right_block td{
+    padding: 0 0 0 10px;
+    margin: 0;
+    border-collapse: collapse;
+    line-height: 18px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.ajax_basket .ab_goods_block .ab_right_block td.ab_price{
+    padding: 0;
+    color: #12354E;
+    padding-left: 5px;
+}
+.ajax_basket .ab_goods_block .ab_right_block td input{ 
+    width: 27px; height: 18px; 
+    text-align: center; 
+    border: 1px solid #E6ECF0; 
+    border-radius: 2px; }
+.ajax_basket .ab_goods_block .ab_right_block .ab_delete{
+    position: absolute;
+    background-image: url(/img/close_modal_btn.png);
+    width: 10px; height: 10px;
+    right:5px; top:5px;
+    cursor: pointer;
+}
+.ajax_btn_block{
+    position: relative;
+    margin: 15px 0px 0px 0px;
+    /*border: 1px dashed #c00;*/
+    height: 35px;
+}
+.ajax_btn_block a{ font-size: 17px; }
+.ajax_btn_block a.mybtn{ font-size: 14px; }
+
+.ajax_btn_block .result_price{
+    /*border: 1px dashed #0a2;*/
+    position: absolute;
+    height: 20px; width: 150px;
+    top: 6px; right: 160px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #31a32d;
+    text-align: right;
+}
+.ajax_btn_block .result_price span{ font-size: 14px;}
+/* </basket> */
+
+/*<oreder>*/
+.ajax_order{
+    /*max-height: 400px;*/
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.ajax_order table td{
+    padding: 2px 0px 2px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+.ajax_order table td.shipping{
+    line-height: 13px;
+    padding: 15px 0px 10px 0px
+}
+.ajax_order table td.shipping span{ font-size: 14px; font-weight: bold; }
+.ajax_order table td.shipping div{ font-size: 13px; padding: 5px 0px 0px 10px; }
+.ajax_order table td input, .ajax_order table td textarea{
+    width: 200px;
+    height: 18px;
+    border: 1px solid #E6ECF0;
+    border-radius: 4px;
+    padding: 0px 5px;
+}
+.ajax_order table td input[type=radio]{
+    border: none; height: auto; width: auto; padding: auto;
+}
+.ajax_order table td textarea{ height: 50px; width: 350px; }
+.ajax_order #shipping_block{
+    overflow: hidden;
+    display: none;
+}
+#order_error_msg{
+    /*border: 1px dashed #f00;*/
+    position: absolute;
+    height: 25px; width: 250px;
+    top:5px; right: 180px;
+    text-align: right;
+    color: #e00;
+}
+#shipping_block #new_post_notice{ font-size: 11px; /*font-style: italic;*/ }
+#shipping_block #order_new_post_notice{ line-height: 15px;}
+/*</oreder>*/
+
+
+
+
+a.mybtn{
+    display: block;
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    font-size: 14px;
+    /*letter-spacing: 1px;*/
+    line-height: 33px;
+    height: 33px;
+    padding: 0px 14px;
+    border-radius: 4px;
+    
+    border: 1px solid #f4aa00; /*orange*/
+    background-color: #f4aa00; /*orange*/
+    
+    border: 1px solid #ffb12c; /*orange*/
+    background-color: #ffb12c; /*orange*/
+    
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    text-transform: uppercase;
+}
+a.mybtn:hover{  
+    border-color: #ff7d00; 
+    background-color: #ff7d00;
+    text-decoration: none;
+}

@@ -3,7 +3,7 @@
 
 <div class="ajax_basket">
     <form>
-    <? 
+    <?php
         $result_price = 0;
         foreach ($goods_list as $goods_ar): 
             $goods_ar['price']          = abs($goods_ar['price']);
@@ -46,7 +46,7 @@
 
         </div>
 
-    <? endforeach; ?>
+    <?php endforeach; ?>
     </form>
 </div>
 

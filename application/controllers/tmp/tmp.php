@@ -247,9 +247,9 @@ class tmp extends CI_Controller{
             
             if( !file_exists( 'upload/images/'.$row['main_img'] ) ){ $i_nofile++;  continue; }
             
-            $this->upload_img_lib->resize_img( $row['main_img'], '70x70');
-            $this->upload_img_lib->resize_img( $row['main_img'], '160x160');
-            $this->upload_img_lib->resize_img( $row['main_img'], '265x290');
+            $this->upload_img_lib->resize_img( $row['main_img'], 'small');
+            $this->upload_img_lib->resize_img( $row['main_img'], 'upper-small');
+            $this->upload_img_lib->resize_img( $row['main_img'], 'medium');
             $i++;
         }
         
@@ -267,7 +267,7 @@ class tmp extends CI_Controller{
             
             if( !file_exists( 'upload/images/'.$row['img'] ) ){ $i_nofile++;  continue; }
             
-            $this->upload_img_lib->resize_img( $row['img'], '160x160');
+            $this->upload_img_lib->resize_img( $row['img'], 'upper-small');
             $i++;
         }
         

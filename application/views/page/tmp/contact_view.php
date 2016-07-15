@@ -26,7 +26,7 @@
                 E-mail:
             </td>
             <td>
-                info@house-control.org.ua
+                mail@cctv-pro.com.ua
             </td>
         </tr>
         <tr>

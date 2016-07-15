@@ -10,9 +10,9 @@
     <br />
     Теги:
     <ul>
-        <? foreach ($tags_list as $tag_ar): ?>
+        <?php foreach ($tags_list as $tag_ar): ?>
             <li style="margin: 0px 7px; line-height: 24px;"><a href="/articles/1/<?= $tag_ar['url_name'] ?>/"><?= $tag_ar['name'] ?></a></li> |
-        <? endforeach; ?>
+        <?php endforeach; ?>
     </ul>
 </div>
 
@@ -33,9 +33,9 @@
 
 
 <!-- похожие статьи -->
-<? if ($articles_list): ?>
+<?php if ($articles_list): ?>
     <div class="page-title"><h2>Похожие статьи:</h2></div>
-    <? foreach ($articles_list as $article_ar): ?>
+    <?php foreach ($articles_list as $article_ar): ?>
         <div class="article_prev_block">
             <div class="apb_title">
                 <a href="/article/<?= $article_ar['id'] . '/' . $article_ar['url_name'] . '/' ?>">
@@ -43,9 +43,9 @@
                 </a>
             </div>
             <p>
-                <? if (!empty($article_ar['img'])) echo '<img src="/upload/articles/' . $article_ar['img'] . '" />'; ?>
+                <?php if (!empty($article_ar['img'])) echo '<img src="/upload/articles/' . $article_ar['img'] . '" />'; ?>
                 <?= $article_ar['text'] ?>
             </p>
         </div>
-    <? endforeach; ?>
-<? endif; ?>
+    <?php endforeach; ?>
+<?php endif; ?>

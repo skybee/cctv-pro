@@ -111,7 +111,7 @@
                 Адрес: г. Харьков, пр-т. Ленина 40/3, офис 345<br />
                 Тел.: (057) 759-56-81, (098) 427-01-25<br />
                 Факс: (057) 720-45-54<br />
-                E-mail: info@house-control.org.ua
+                E-mail: mail@cctv-pro.com.ua
             </p>
         <?php else: ?>
             <p>
@@ -120,7 +120,7 @@
                 Адрес: г. Харьков, пр-т. Ленина 40/3, офис 345<br />
                 Тел.: (057) 759-56-81, (098) 427-01-25<br />
                 Факс: (057) 720-45-54<br />
-                E-mail: info@house-control.org.ua
+                E-mail: mail@cctv-pro.com.ua
             </p>
         <?php endif; ?>
         

@@ -7,15 +7,30 @@
         <h2>Редактирование: <?=$goods_data['name']?></h2>
         <p>
             Категории товара:<br /><br />
-            <? foreach($goods_data['category'] as $goods_category ): ?>
+            <?php foreach($goods_data['category'] as $goods_category ): ?>
             <a href="/admin/goods_list/<?=$goods_category['id']?>/" class="ajax_load" ><?=$goods_category['name']?><a/> | 
-            <? endforeach;?>
+            <?php endforeach;?>
         </p>
         <br />
         Название | Цена<br />
         <input type="text" name="name" value="<?=$goods_data['name']?>" style="width: 500px" />
         <input type="text" name="price" value="<?=$goods_data['price']?>" style="width: 100px" />
-
+        
+        <br /><br />
+        House Control Синхронизация<br />
+        HC ID: 
+        &nbsp;&nbsp;
+        <input type="text" name="hc_goods_id" value="<?=$goods_data['hc_goods_id']?>" style="width: 100px" />
+        &nbsp;&nbsp; 
+        Множитель: 
+        &nbsp;&nbsp;
+        <input type="text" name="hc_factor" value="<?=$goods_data['hc_factor']?>" style="width: 70px" />
+        &nbsp;&nbsp;
+        Выполнять синхронизацию:
+        <input type="checkbox" name="hc_sync" value="1" <?php if($goods_data['hc_sync'] == '1') echo 'checked="checked"';?> style="position: relative; top: 3px;" />
+        
+        <br /><br />
+        
         <input type="hidden" name="main_img" value="<?=$goods_data['main_img']?>" />
         <input type="hidden" name="goods_id" value="<?=$goods_data['id']?>" />
         <br />
@@ -65,7 +80,7 @@
         </div>
         
         <div class="competitors_list">
-            <? 
+            <?php 
                 if( count($competitors) ):
                     foreach($competitors as $cmptrs ): 
             ?>
@@ -82,7 +97,7 @@
                         </a>
                     </div>
                 </div>
-            <? 
+            <?php 
                     endforeach; 
                 endif;
             ?>

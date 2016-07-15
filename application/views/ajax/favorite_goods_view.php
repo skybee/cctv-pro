@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 
-<? foreach ($goods_list as $goods_ar): ?>
+<?php foreach ($goods_list as $goods_ar): ?>
 
 <div class="ajax_fav_block">
     <div class="fav_title">
@@ -13,4 +13,4 @@
     </div>
 </div>
 
-<? endforeach; ?>
+<?php endforeach; ?>

@@ -111,7 +111,7 @@
             </tr>
             <tr>
                 <td>E-mail:</td>
-                <td>info@house-control.org.ua</td>
+                <td>mail@cctv-pro.com.ua</td>
             </tr>
             <tr>
                 <td style="width: 70px;">WEB Сайт:</td>

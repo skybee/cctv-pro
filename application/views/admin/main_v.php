@@ -6,21 +6,16 @@
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <!--<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>-->
-        <!--<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <!--<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>-->
-        <script type="text/javascript" src="/js/jquery.form.js"></script>
-        <script type="text/javascript" src="/js/form_action.js"></script>
-        <script type="text/javascript" src="/js/tinymce/tinymce.min.js"></script>
-        <script type="text/javascript" src="/js/admin.js"></script>
+        <script type="text/javascript" src="/js/admin/jquery.form.js"></script>
+        <script type="text/javascript" src="/js/admin/form_action.js"></script>
+        <script type="text/javascript" src="/js/admin/tinymce/tinymce.min.js"></script>
+        <script type="text/javascript" src="/js/admin/admin.js"></script>
 
 
-        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="all" />
-        <!--<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" media="all" />-->
-        <!--<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>-->
-        <link rel="stylesheet" type="text/css" href="/css/popup.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="/css/admin.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/css/admin/reset.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/css/admin/popup.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/css/admin/admin.css" media="all" />
         
         <link rel="icon" href="/img/favico_32_2.png" type="image/png" />
         <link rel="shortcut icon" href="/img/favico_32_2.png" type="image/png" />

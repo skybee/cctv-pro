@@ -7,7 +7,7 @@
 </div>
 
 <div class="left_articles">
-    <? foreach($left_articles_list as $article_ar): ?>
+    <?php foreach($left_articles_list as $article_ar): ?>
     <div class="la_article_block">
         <div class="la_title">
             <!--<a href="#"><?=$article_ar['title']?></a>-->
@@ -18,13 +18,13 @@
         </div>
         <div class="la_shadow"></div>
     </div>
-    <? endforeach; ?>
+    <?php endforeach; ?>
     
-    <? if( isset($links['isset']) && $links['isset'] == true ): ?>
+    <?php if( isset($links['isset']) && $links['isset'] == true ): ?>
     <div class="la_article_block spe_block">
         <?=$links['html']?>
     </div>
-    <? endif; ?>
+    <?php endif; ?>
     
     
 </div>

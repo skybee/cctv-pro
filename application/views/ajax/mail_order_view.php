@@ -14,24 +14,24 @@
                 </tr>
                 <tr>
                     <td  style="padding: 2px 5px 2px 5px; width: 120px;">ФИО:</td>
-                    <td style="padding: 2px 5px 2px 5px;"><? if(isset($sname)) echo $sname ?> <? if(isset($name)) echo $name ?> <? if(isset($thname)) echo $thname ?></td>
+                    <td style="padding: 2px 5px 2px 5px;"><?php if(isset($sname)) echo $sname ?> <?php if(isset($name)) echo $name ?> <?php if(isset($thname)) echo $thname ?></td>
                 </tr>
                 <tr>
                     <td style="padding: 2px 5px 2px 5px;">Телефон:</td>
-                    <td style="padding: 2px 5px 2px 5px;"><? if(isset($phone)) echo $phone ?></td>
+                    <td style="padding: 2px 5px 2px 5px;"><?php if(isset($phone)) echo $phone ?></td>
                 </tr>
                 <tr>
                     <td style="padding: 2px 5px 2px 5px;">E-mail:</td>
-                    <td style="padding: 2px 5px 2px 5px;"><? if(isset($mail)) echo $mail ?></td>
+                    <td style="padding: 2px 5px 2px 5px;"><?php if(isset($mail)) echo $mail ?></td>
                 </tr>
                 <tr>
                     <td style="padding: 2px 5px 2px 5px;">Комментарий:</td>
-                    <td style="padding: 2px 5px 2px 5px;"><? if(isset($comment)) echo $comment ?></td>
+                    <td style="padding: 2px 5px 2px 5px;"><?php if(isset($comment)) echo $comment ?></td>
                 </tr>
                 <tr>
                     <td style="padding: 2px 5px 2px 5px;">Доставка:</td>
                     <td style="padding: 2px 5px 2px 5px;">
-                        <? 
+                        <?php
                             if( $order == 1 ) echo "Самовывоз (Харьков)";
                             elseif( $order == 2 ) echo $sklad;
                         ?>
@@ -40,7 +40,7 @@
             </table>
         </div>
         <div style="font-size: 12px; font-family: arial, verdana;">
-                <?
+                <?php
                 foreach ($goods_list as $goods_ar):
                     $goods_ar['price'] = abs($goods_ar['price']);
                     $count_ar[$goods_ar['id']] = abs($count_ar[$goods_ar['id']]);
@@ -85,7 +85,7 @@
                         </div>
 
                     </div>
-                <? endforeach; ?>
+                <?php endforeach; ?>
         </div>
     </body>
 </html>

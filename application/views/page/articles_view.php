@@ -8,15 +8,15 @@
     <br />
     Теги:
     <ul>
-        <? foreach($tags_list as $tag_ar): ?>
+        <?php foreach($tags_list as $tag_ar): ?>
         <li style="margin: 0px 7px; line-height: 24px;"><a href="/articles/1/<?=$tag_ar['url_name']?>/"><?=$tag_ar['name']?></a></li> |
-        <? endforeach; ?>
+        <?php endforeach; ?>
     </ul>
 </div>
 
 <div class="product-collateral info_page_txt">
     
-    <? foreach( $articles_list as $article_ar ): ?>
+    <?php foreach( $articles_list as $article_ar ): ?>
     <div class="article_prev_block">
         <div class="apb_title">
             <a href="/article/<?=$article_ar['id'].'/'.$article_ar['url_name'].'/'?>">
@@ -24,26 +24,26 @@
             </a>
         </div>
         <p>
-            <? if( !empty($article_ar['img']) ) echo '<img src="/upload/articles/'.$article_ar['img'].'" />'; ?>
+            <?php if( !empty($article_ar['img']) ) echo '<img src="/upload/articles/'.$article_ar['img'].'" />'; ?>
             <?=$article_ar['text']?>
         </p>
     </div>
-    <? endforeach; ?>
+    <?php endforeach; ?>
     
     
 <div class="page-title">
     <h2>
     <div class="goods_pager">
         <ul>
-            <? foreach($pager_ar as $page): ?>
+            <?php foreach($pager_ar as $page): ?>
             <li>
-                <? if($page != $page_nmbr && $page != '...'): ?>
+                <?php if($page != $page_nmbr && $page != '...'): ?>
                 <a href="/articles/<?=$page?>/<?=$tag_url?>"><?=$page?></a>
-                <? else: ?>
+                <?php else: ?>
                 <?=$page?>
-                <? endif;?>
+                <?php endif;?>
             </li>
-            <? endforeach;?>
+            <?php endforeach;?>
         </ul>
     </div>
     </h2>

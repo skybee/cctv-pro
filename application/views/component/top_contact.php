@@ -13,7 +13,7 @@
             </tr>
             <tr>
                 <td class="top_contact_blue">E-mail:</td>
-                <td class="head-adress">info@house-control.org.ua</td>
+                <td class="head-adress">mail@cctv-pro.com.ua</td>
             </tr>
         </table>
     </div>

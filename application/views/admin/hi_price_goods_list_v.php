@@ -7,7 +7,7 @@
 
         <div class="goods_list_tbl">
             <table>
-                <? if( count($goods_ar) ): 
+                <?php if( count($goods_ar) ): 
                     foreach($goods_ar as $goods):
                 ?>
                 <tr class="goods_list_tr" style="border-bottom: 1px #aaa solid;">
@@ -15,7 +15,7 @@
                         <a href="/admin/goods/<?=$goods['id']?>/" class="ajax_load" style="font-weight: bold;" ><?=$goods['name']?></a>
                         <div class="hi_price_block">
                             <table style="width: 100%">
-                                <? foreach($goods['competitors'] as $competitors): ?>
+                                <?php foreach($goods['competitors'] as $competitors): ?>
                                 <tr>
                                     <td style="width: 30px;">Цена:</td>
                                     <td style="width: 70px; text-align: right;"><?=$competitors['price']?> грн.</td>
@@ -27,7 +27,7 @@
                                         </span>
                                     </td>
                                 </tr>
-                                <? endforeach; ?>
+                                <?php endforeach; ?>
                             </table>
                         </div>
                     </td>
@@ -35,12 +35,12 @@
                         <input type="text" name="price[<?=$goods['id']?>]" value="<?=$goods['price']?>" style="width:100px; margin: 3px 0px; height: 27px" />
                     </td>
                 </tr>
-                <? 
+                <?php
                         endforeach;
                     else: 
                 ?>
                 <tr>Нет товаров с высокой ценой</td>
-                <? endif; ?>
+                <?php endif; ?>
             </table>
         </div>
     </div>

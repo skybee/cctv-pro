@@ -8,7 +8,7 @@
 
 <div id="ajax_favorite" class="ajax_favorite">
     
-    <? foreach ($left_goods_list as $goods_ar): ?>
+    <?php foreach ($left_goods_list as $goods_ar): ?>
         <div class="ajax_fav_block">
             <div class="fav_title">
                 <!--<a href="#" ><?=$goods_ar['name']?></a>-->
@@ -19,12 +19,12 @@
                 <div class="fav_price"><?= price_explode( $goods_ar['price'] ) ?></div>
             </div>
         </div>
-    <? endforeach; ?>
+    <?php endforeach; ?>
     
-    <? if( isset($links['isset']) && $links['isset'] == true ): ?>
+    <?php if( isset($links['isset']) && $links['isset'] == true ): ?>
     <div class="ajax_fav_block spe_block">
         <?=$links['html']?>
     </div>
-    <? endif; ?>
+    <?php endif; ?>
     
 </div>

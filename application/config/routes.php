@@ -1,4 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
@@ -17,13 +19,13 @@
 |
 | Please see the user guide for complete details:
 |
-|	http://codeigniter.com/user_guide/general/routing.html
+|	https://codeigniter.com/user_guide/general/routing.html
 |
 | -------------------------------------------------------------------------
 | RESERVED ROUTES
 | -------------------------------------------------------------------------
 |
-| There area two reserved routes:
+| There are three reserved routes:
 |
 |	$route['default_controller'] = 'welcome';
 |
@@ -33,36 +35,41 @@
 |
 |	$route['404_override'] = 'errors/page_missing';
 |
-| This route will tell the Router what URI segments to use if those provided
-| in the URL cannot be matched to a valid route.
+| This route will tell the Router which controller/method to use if those
+| provided in the URL cannot be matched to a valid route.
 |
+|	$route['translate_uri_dashes'] = FALSE;
+|
+| This is not exactly a route, but allows you to automatically route
+| controller and method names that contain dashes. '-' isn't a valid
+| class or method name character, so it requires translation.
+| When you set this option to TRUE, it will replace ALL dashes in the
+| controller and method URI segments.
+|
+| Examples:	my-controller/index	-> my_controller/index
+|		my-controller/my-method	-> my_controller/my_method
 */
+
 
 $route['default_controller'] = "main";
 
-// <old_301>
-$route['tovar_[\s\S]*?([a-f\d]{32})\.html'] = 'redirect/goods/$1';
-$route['catalog_([\s\S]*?)\.html']          = 'redirect/category/$1';
-$route['ustanovka_([\s\S]*?)\.html']        = 'redirect/services/$1';
-$route['(contacty|dostavka)\.html']         = 'redirect/other/$1';
-$route['print([\s\S]*?)\.html']             = 'redirect/print_doc/$1';
-// </old_301>
 
 $route['admin'] = "admin";
-$route['admin/(:any)']      = "admin/$1";
-$route['cron/(:any)']       = "cron/$1";
-$route['popup/(:any)']      = "popup/$1";
-$route['action/(:any)']     = "action/$1";
-$route['price/(:any)']      = "price/$1";
-$route['parser/(:any)']     = "parser/$1";
-$route['ajax/(:any)']       = "ajax/$1";
-$route['print_docs/(:any)'] = "print_docs/$1";
-$route['savefile/(:any)']   = "savefile/$1";
-$route['donor/(:any)']      = "donor/$1";
-$route['tmp/(:any)']        = "tmp/tmp/$1";
-$route['(:any)']            = "main/$1";
+$route['admin/(.+)']        = "admin/$1";
+$route['cron/(.+)']         = "cron/$1";
+$route['cron_dir/(.+)']     = "cron_dir/$1";
+$route['popup/(.+)']        = "popup/$1";
+$route['action/(.+)']       = "action/$1";
+$route['price/(.+)']        = "price/$1";
+$route['parser/(.+)']       = "parser/$1";
+$route['ajax/(.+)']         = "ajax/$1";
+$route['print_docs/(.+)']   = "print_docs/$1";
+$route['savefile/(.+)']     = "savefile/$1";
+$route['donor/(.+)']        = "donor/$1";
+$route['tmp/(.+)']          = "tmp/tmp/$1";
+$route['(.+)']              = "main/$1";
 $route['404_override']      = '';
 
-
-/* End of file routes.php */
-/* Location: ./application/config/routes.php */
+//$route['default_controller'] = 'welcome';
+//$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;

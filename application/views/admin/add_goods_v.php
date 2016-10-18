@@ -11,7 +11,21 @@
         <input type="text" name="name" value="" style="width: 500px" />
         <input type="text" name="price" value="" style="width: 100px" />
 
-        <br />
+        <br /><br />
+        House Control Синхронизация<br />
+        HC ID: 
+        &nbsp;&nbsp;
+        <input type="text" name="hc_goods_id" value="0" style="width: 100px" />
+        &nbsp;&nbsp; 
+        Множитель: 
+        &nbsp;&nbsp;
+        <input type="text" name="hc_factor" value="1" style="width: 70px" />
+        &nbsp;&nbsp;
+        Выполнять синхронизацию:
+        <input type="checkbox" name="hc_sync" value="1"  style="position: relative; top: 3px;" />
+        
+        <br /><br />
+        
         <b>*</b> Краткое описание<br />
         <textarea style="width: 600px; height: 120px;" name="short_description" ></textarea>
         <br />

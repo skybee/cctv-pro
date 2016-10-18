@@ -35,6 +35,10 @@ html {
 
 body          { 
 	background:#e1e1e1 url(/img/bg.gif) repeat-x;
+        /*background: #f5f5fb;*/
+/*        background-image: url('http://www.ceed-jd.ru/wp-content/uploads/2015/03/metal-background-60.jpg');
+        background-attachment: fixed;
+        background-size: 100%;*/
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size:13px; 
 	line-height:20px; 
@@ -145,7 +149,8 @@ button.button span:before,
 .header .form-search button.button span:before,
 .camera_wrap .camera_pag .camera_pag_ul li:before,
 .list-icon li a:before,
-.product-view .bx-controls-direction > a:before  {
+.product-view .bx-controls-direction > a:before,
+.menu_basket_info:before{
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;

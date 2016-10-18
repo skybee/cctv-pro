@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');  ?>
 
 
-<? if( !empty($cat_info['text']) ): ?>
+<?php if( !empty($cat_info['text']) ): ?>
 <div class="product-collateral category_text">
     <div class="cat_txt_shadow"></div>
     <div class="box-collateral box-description">
@@ -13,4 +13,4 @@
         </div>
     </div>
  </div>
-<? endif; ?>
+<?php endif; ?>

@@ -41,14 +41,14 @@
         .dashboard .welcome-msg,
         .box-account,
         .cms_border
-        { behavior:url(--http://livedemo00.template-help.com/magento_34128/skin/frontend/default/theme039k/js/PIE.php) }
+        { behavior:url(--/js/ie/PIE.php) }
         </style>
         <![endif]-->
         <!--[if lt IE 7]>
         <script type="text/javascript">
         //<![CDATA[
             var BLANK_URL = '/js/blank.html';
-            var BLANK_IMG = '---http://livedemo00.template-help.com/magento_34128/js/spacer.gif';
+            var BLANK_IMG = '---/js/ie/spacer2.gif';
         //]]>
         </script>
         <![endif]-->
@@ -116,7 +116,7 @@
                                 <div class="std">
 
                                     <!-- TOP SLIDER -->
-                                    <? #= $top_slider ?>
+                                    <?php #= $top_slider ?>
 
                                     <div>
                                         <?= $content ?>
@@ -152,7 +152,7 @@
                                 <!-- cat menu -->                
                                 <?= $cat_menu ?>
                                 
-                                <? #if( isset($left_banner) ) echo $left_banner ?>
+                                <?php #if( isset($left_banner) ) echo $left_banner ?>
 
 
                                 <div class="left_menu_title">

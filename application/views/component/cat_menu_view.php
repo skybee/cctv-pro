@@ -23,7 +23,7 @@
             <div class="bottom_row"></div>
             <div class="child_cat">
                 <?php foreach( $child_main_cat as $cat_ar ): ?>
-                    <!--<a href="#" <? if($cat_ar['id'] == $child_cat_id ) echo 'class="this_child_cat_btn"' ?> >-->
+                    <!--<a href="#" <?php if($cat_ar['id'] == $child_cat_id ) echo 'class="this_child_cat_btn"' ?> >-->
                     <a href="/category/<?=$cat_ar['url_name']?>/" <?php if($cat_ar['id'] == $child_cat_id ) echo 'class="this_child_cat_btn"' ?> >   
                         <div class="child_cat_txt"><?=$cat_ar['name']?></div>
                         

@@ -8,7 +8,7 @@
 
         <div class="goods_list_tbl">
             <table>
-                <? if( count($goods_ar) ): ?>
+                <?php if( count($goods_ar) ): ?>
                 <tr>
                     <td colspan="2" style="padding: 0;">
                         <div class="goods_list_tools">
@@ -44,7 +44,7 @@
                         </div>
                     </td>
                 </tr>
-                <? 
+                <?php
                     foreach($goods_ar as $goods): 
                         $hide = '';
                         if( $goods['price'] < 1 ) $hide = ' style="display:none;" ';
@@ -52,23 +52,38 @@
                 <tr <?=$hide?> class="goods_list_tr">
                     <td>
                         <input type="checkbox" name="check_goods[<?=$goods['id']?>]" value="<?=$goods['id']?>" class="goods_list_checkbox" />
-                        <? if( $goods['competitors_cnt'] > 0 ): ?>
+                        <?php if( $goods['competitors_cnt'] > 0 ): ?>
                         <span style="color: #46bf00">[<?=$goods['competitors_cnt']?>]</span> 
-                        <? else: ?>
+                        <?php else: ?>
                         <span style="color: #e00000">[-]</span>
-                        <? endif; ?>    
+                        <?php endif; ?>    
                         <a href="/admin/goods/<?=$goods['id']?>/" class="ajax_load" ><?=$goods['name']?></a>
+                        <?php
+                            if($goods['hc_sync'] == 1 && $goods['hc_goods_id'] > 1)
+                            {
+                                $hcSyncColor = 'color:#46bf00;';
+                            }
+                            elseif($goods['hc_goods_id'] > 1)
+                            {
+                                $hcSyncColor = 'color:#e00000;';
+                            }
+                            else
+                            {
+                                $hcSyncColor = '';
+                            }
+                        ?>
+                        <span class="hc_sync_mark" style="<?=$hcSyncColor?>">HC Sync</span>
                     </td>
                     <td>
                         <input type="text" name="price[<?=$goods['id']?>]" value="<?=$goods['price']?>" style="width:100px; margin: 3px 0px; height: 27px" />
                     </td>
                 </tr>
-                <? 
+                <?php
                         endforeach;
                     else: 
                 ?>
                 <tr>В этой категории отсутсутвуют товары</td>
-                <? endif; ?>
+                <?php endif; ?>
             </table>
         </div>
     </div>

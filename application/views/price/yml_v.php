@@ -6,20 +6,20 @@
         <name>House Control</name>
         <company>House Control</company>
         <url>house-control.org.ua</url>
-        <email>info@house-control.org.ua</email>
+        <email>mail@cctv-pro.com.ua</email>
         
         <currencies>
             <currency id="UAH" rate="1"/>
         </currencies>
         
         <categories>
-            <? foreach($cats_ar as $cat): ?>
+            <?php foreach($cats_ar as $cat): ?>
             <category id="<?=$cat['id']?>" <?if($cat['parent_id'] > 0) echo 'parentId="'.$cat['parent_id'].'"'?>><?=$cat['name']?></category>
-            <? endforeach; ?>
+            <?php endforeach; ?>
         </categories>
         
         <offers>
-            <? foreach($goods_ar as $goods): ?>
+            <?php foreach($goods_ar as $goods): ?>
             <offer id="<?=$goods['id']?>" available="true">
                 <url>http://house-control.org.ua/goods/<?=$goods['id']?>/<?=$goods['url_name']?>/</url>
                 <price><?=$goods['price']?></price>
@@ -31,7 +31,7 @@
                 <name><?=$goods['name']?></name>
                 <description><?=$goods['short_description']?></description>
             </offer>
-            <? endforeach; ?>
+            <?php endforeach; ?>
         </offers>
     </shop>
 </yml_catalog>    

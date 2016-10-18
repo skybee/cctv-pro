@@ -3,15 +3,19 @@
     RewriteBase /
 
     # <301>
-    RewriteRule /videoregistratory---dahua/(.*)$ http://house-control.org.ua/category/dahua-dvr-nvr-videoregistrator/$1 [L,R=301]
-    RewriteRule /dahua-nvr-ip-dvr-redirect/(.*)$ http://house-control.org.ua/category/ip_nvr_dahua/$1 [L,R=301]
-    RewriteRule /ip-camera-redirect/(.*)$ http://house-control.org.ua/category/ip_cctv/$1 [L,R=301]
-    RewriteRule /videonabljudenie/(.*)$ http://house-control.org.ua/category/cctv-systems/$1 [L,R=301]
-    RewriteRule ^category/kamera/1/donetsk/$ http://house-control.org.ua/category/kamera/1/ip-kameru-cctv-zaporozhye/ [L,R=301]
-    RewriteRule ^([a-z_-\d/]*[^/])$ $1/ [NC,L,R=301]
+    RewriteRule ^([-_a-z\d/]*[^/])$ $1/ [NC,L,R=301]
     RewriteRule ^(category/.*?)/1/$ $1/ [NC,L,R=301]
     # </301>
 
+    # <Image Flip>
+    RewriteCond %{HTTP_USER_AGENT} (Googlebot|YandexImages|msnbot)
+    RewriteRule ^upload/images/.*(jpg|jpeg|png)$ /imageflip/do.php [L]
+    # </Image Flip>
+
+
+    #load img from server
+    RewriteCond %{HTTP_HOST} ^cctv-pro\.lh$ [NC]
+    RewriteRule ^(.*?\.(png|jpg|jpeg|gif))$ http://cctv-pro.com.ua/$1 [L]
 
     #Removes access to the system folder by users.
     #Additionally this will allow you to create a System.php controller,
@@ -33,6 +37,8 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php?/$1 [L]
+
+
 </IfModule>
 
 <IfModule !mod_rewrite.c>

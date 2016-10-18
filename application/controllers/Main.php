@@ -371,10 +371,7 @@ class Main extends CI_Controller{
     function article( $id, $url_title = FALSE, $lock = false ){
         if( $lock ){ show_404(); exit(); }
 //        if( $this->cache_do ) $this->output->cache(60*24*10);
-        
-//        $this->load->helper('links/sitemap_link'); //Tmp for Indots
-//        $this->load->library('links_lib', array('main'=>'ignots') ); //Tmp for Indots
-//        $this->links_lib->link_isset = TRUE; //Tmp for Indots
+
         
         if( !$url_title || $lock ){ show_404 (); exit(); }
         
@@ -395,8 +392,7 @@ class Main extends CI_Controller{
         $data_ar['main_menu_list']      = $this->info->get_page_list();
         $data_ar['main_cat_id']         = false;
         $data_ar['left_goods_list']     = $this->goods->get_like_str_goods( $data_ar['info_ar']['title'].' '.$this->articles->get_short_txt( $data_ar['info_ar']['text'] ,300), 8, 12 );
-//        $data_ar['links']['isset']      = $this->links_lib->link_isset;
-//        $data_ar['links']['html']       = $this->links_lib->link_html;
+
         $data_ar['info_ar']['text']     = article_linkator( $data_ar['info_ar']['text'] );
         $data_ar['city_link']           = get_city_link( $_SERVER['REQUEST_URI'] );
         
@@ -405,14 +401,14 @@ class Main extends CI_Controller{
         $tpl_ar['head_data']['html_description']    = '';
         
         $tpl_ar['top_contact']          = $this->load->view('cctv-tmp/component/top_contact', '', TRUE);
-        $tpl_ar['cat_menu']             = $this->load->view('component/cat_menu_view', $data_ar, TRUE);
-        $tpl_ar['content']              = $this->load->view('component/top_slider_view', array(), TRUE);
-        $tpl_ar['content']             .= $this->load->view('page/article_view', $data_ar, TRUE);
-        $tpl_ar['top_menu']             = $this->load->view('component/top_menu_view', array(), TRUE);
+        $tpl_ar['cat_menu']             = $this->load->view('cctv-tmp/component/cat_menu_view', $data_ar, TRUE);
+//        $tpl_ar['content']              = $this->load->view('component/top_slider_view', array(), TRUE);
+        $tpl_ar['content']              = $this->load->view('cctv-tmp/page-container/article_view', $data_ar, TRUE);
+        $tpl_ar['top_menu']             = $this->load->view('cctv-tmp/component/top_menu_view', array(), TRUE);
         $tpl_ar['left_articles_goods']  = $this->load->view('component/left_goods_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
         $tpl_ar['counter']['li']        = '';
         
-        $this->load->view('main_view', $tpl_ar );
+        $this->load->view('cctv-tmp/main_view', $tpl_ar );
     }
 }

@@ -104,12 +104,12 @@ if( $_SERVER['HTTP_HOST'] == 'cctv-pro.lh' ){
     
     $db['default']['hostname'] = 'cctv-pro.com.ua';
     $db['default']['username'] = 'admin_cctv_pro';
-    $db['default']['password'] = 'cctv_pro_qwerty';
-    $db['default']['database'] = 'admin_cctv';
+    $db['default']['password'] = 'cctv-pro-qwerty';
+    $db['default']['database'] = 'admin_cctv_pro';
 }
 else{
     $db['default']['hostname'] = 'localhost';
     $db['default']['username'] = 'admin_cctv_pro';
-    $db['default']['password'] = 'cctv_pro_qwerty';
-    $db['default']['database'] = 'admin_cctv';
+    $db['default']['password'] = 'cctv-pro-qwerty';
+    $db['default']['database'] = 'admin_cctv_pro';
 }

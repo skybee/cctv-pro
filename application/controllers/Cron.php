@@ -47,7 +47,7 @@ class Cron extends CI_Controller{
         
         foreach ($goodsDataAr as $gData)
         {
-            if(!isset($hcData[$gData['hc_goods_id']]) or $hcData[$gData['hc_goods_id']]['price']<1)
+            if(!isset($hcData[$gData['hc_goods_id']])) // ( or $hcData[$gData['hc_goods_id']]['price']<1 )
             {
                 continue;
             }

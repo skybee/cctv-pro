@@ -54,6 +54,10 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
 
+    if($_SERVER['HTTP_X_REAL_IP']=='178.150.106.188'){
+        sleep(rand(1,15));
+    }
+
     if($_SERVER['HTTP_HOST'] == 'cctv-pro.lh')
     {
         define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');

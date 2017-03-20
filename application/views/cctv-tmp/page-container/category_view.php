@@ -10,11 +10,11 @@
         <!-- /CONTENT -->
         
         <div class="page-title category-title" style="margin-bottom: 10px;">
-            <h1><?=$cat_info['name']?> / Товары: <?php if($page_nmbr > 1 ) echo "стр. {$page_nmbr}" ?></h1>
+            <h2><?=$cat_info['name']?> / Товары: <?php if($page_nmbr > 1 ) echo "стр. {$page_nmbr}" ?></h2>
         </div>
         <div class="category-products">
             <div class="toolbar">
-                <div class="pager" id="goods_sorter">
+                <div class="pager" id="goods_sorter" rel="<?=$order_val?>">
                     <span>Упорядочить: &nbsp;</span>
                     <a href="/category/<?=$cat_name?>/1/order/price/"   id="price">Цена</a>
                     <a href="/category/<?=$cat_name?>/1/order/rank/"    id="rank">Популярность</a>

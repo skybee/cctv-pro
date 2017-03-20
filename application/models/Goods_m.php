@@ -5,6 +5,23 @@ class Goods_m extends CI_Model{
 
     function __construct(){
         parent::__construct();
+        
+//        $this->ci =& get_instance();
+        $this->load->library('Discount_lib');
+//        echo $this->discount_lib->addDiscount(100,5);
+    }
+    
+    private function addDiscountToRow($row){
+        $row['old_price']       = $row['price'];
+        $row['price']           = $this->discount_lib->addDiscount($row['price'],$row['region_discount']);
+        if($row['old_price'] != $row['price']){
+            $row['price_changed'] = true;
+        }
+        else{
+            $row['price_changed'] = false;
+        }
+        
+        return $row;
     }
     
     function get_goods_from_cat($cat_id_ar, $page = 1, $cnt_on_page = 15, $sort = 'rank' ){
@@ -52,7 +69,7 @@ class Goods_m extends CI_Model{
 //                    ";
         
         $query_str = "  SELECT 
-                            goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price, category.name AS 'cat_name'
+                            goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price, goods.region_discount, category.name AS 'cat_name'
                         FROM 
                             `goods`, `category`, `category_goods`
                         WHERE
@@ -72,6 +89,7 @@ class Goods_m extends CI_Model{
         if( $query->num_rows() < 1 ) return NULL;
         
         foreach( $query->result_array() as $row){
+            $row = $this->addDiscountToRow($row);
             $result_ar[] = $row;
         }
         
@@ -141,6 +159,7 @@ class Goods_m extends CI_Model{
         if( $query->num_rows() < 1 ) return FALSE;
         
         $row = $query->result_array();
+        $row[0] = $this->addDiscountToRow($row[0]);
         return $row[0];
     }
     
@@ -156,7 +175,7 @@ class Goods_m extends CI_Model{
         }
         
         $query = $this->db->query(" SELECT
-                                        goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price, 
+                                        goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price, goods.region_discount, 
                                         category_goods.category_id AS 'cat_id'
                                     FROM 
                                         `goods`, `category_goods`
@@ -167,8 +186,10 @@ class Goods_m extends CI_Model{
                                     ORDER BY `cat_id`, goods.price   
                                   ");                                        
         $result_ar = NULL;
-        foreach( $query->result_array() as $row )
+        foreach( $query->result_array() as $row ){
+            $row = $this->addDiscountToRow($row);
             $result_ar[ $row['id'] ] = $row;
+        }
         
         return $result_ar;        
     }
@@ -177,29 +198,34 @@ class Goods_m extends CI_Model{
         
         $result_ar = NULL;
         
-        $query = $this->db->query(" SELECT goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price
+        $query = $this->db->query(" SELECT goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price, goods.region_discount
                                     FROM `goods`, `category_goods` 
                                     WHERE goods.id != '{$id}' AND `price` <= '$price' AND `price` > '0' AND category_goods.goods_id = goods.id AND category_goods.category_id = '{$cat_id}'
                                     ORDER BY `price` DESC    
                                     LIMIT 2
                                   ");
         
-        foreach( $query->result_array() as $row )
+        foreach( $query->result_array() as $row ){
+            $row = $this->addDiscountToRow($row);
             $result_ar[] = $row;
+        }
         
-        if( $result_ar != NULL )
+        if( $result_ar != NULL ){
             $result_ar = array_reverse($result_ar);
+        }
         
         
-        $query2 = $this->db->query(" SELECT goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price
+        $query2 = $this->db->query(" SELECT goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price, goods.region_discount
                                     FROM `goods`, `category_goods` 
                                     WHERE goods.id != '{$id}' AND `price` >= '$price' AND `price` > '0' AND category_goods.goods_id = goods.id AND category_goods.category_id = '{$cat_id}'
                                     ORDER BY `price` ASC    
                                     LIMIT 4
                                   ");
         
-        foreach( $query2->result_array() as $row )
+        foreach( $query2->result_array() as $row ){
+            $row = $this->addDiscountToRow($row);
             $result_ar[] = $row;
+        }
         
         
         return $result_ar;

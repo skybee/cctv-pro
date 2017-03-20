@@ -19,7 +19,7 @@
             <script type="text/javascript" src="/js/superfish.js"></script>
             <script type="text/javascript" src="/js/scripts.js"></script>
 
-            <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
                 <!--[if lt IE 7]>
                 <script type="text/javascript">
                 //<![CDATA[
@@ -123,57 +123,46 @@
                             <div class="swipe">
                                 <div class="swipe-menu">
                                     <ul class="links">
-                                        <li class="first"><a href="/" title="Home">Home</a></li>
-                                        <li><a href="" title="My Account">My Account</a></li>
-                                        <li><a href="" title="My Wishlist">My Wishlist</a></li>
-                                        <li><a href="" title="My Cart" class="top-link-cart">My Cart</a></li>
-                                        <li><a href="" title="Checkout" class="top-link-checkout">Checkout</a></li>
-                                        <li class=" last"><a href="" title="Log In">Log In</a></li>
+                                        <li class="m-menu-ico-basket">
+                                            <a href="javascript:void(0)" onclick="send_post('', '/ajax/basket/show_basket/', {title: 'Обработка данных', content: 'loader'})" title="Корзина">Корзина</a>
+                                        </li>
+                                        <li class="m-menu-ico-favorite">
+                                            <a href="" title="Избранное">Избранное</a>
+                                        </li>
+                                        <li class="m-menu-ico-search">
+                                            <a href="" title="Поиск">Поиск</a>
+                                        </li>
+                                        <li class="first m-menu-ico-home">
+                                            <a href="/" title="Главная">Главная</a>
+                                        </li>
+                                        <li class="m-menu-ico-about-us">
+                                            <a href="/info/contacts/" title="О Нас">О Нас</a>
+                                        </li>
+                                        <li  class="m-menu-ico-delivery">
+                                            <a href="/info/shipping_payment/" title="Доставка и Оплата">Доставка и Оплата</a>
+                                        </li>
+                                        <li class="m-menu-ico-guarantee">
+                                            <a href="/info/warranty/" title="Гарантия">Гарантия</a>
+                                        </li>
+                                        <li class="m-menu-ico-contact">
+                                            <a href="/info/contacts/" title="Контакты">Контакты</a>
+                                        </li>
                                     </ul>
-                                    <div class="currency-switch switch-show">
-                                        <div class="currency-title">
-                                            <span class="label">Currency:</span><strong class="current">USD</strong>
-                                        </div>
-                                        <ul class="currency-dropdown">
-                                            <li>
-                                                <a href="">
-                                                    <span>British Pound Sterling -</span> GBP
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href=""><span>Euro -</span> EUR</a></li><li><a href="" class="selected"><span>US Dollar -</span> USD</a></li></ul>
-                                    </div>
 
                                     <div class="language-list switch-show">
-                                        <div class="language-title"><span class="label">Your Language:</span> <strong>en</strong></div>
+                                        <div class="language-title"><span class="label">Категории:</span></div>
                                         <ul>
                                             <li>
-                                                <a class="selected" href="" title="en_US">   <strong>en</strong></a>
+                                                <a href="" title="de_DE">   <strong>Камеры Видеонаблюдения</strong></a>
                                             </li>
                                             <li>
-                                                <a href="" title="de_DE">   <strong>de</strong></a>
+                                                <a href="" title="es_ES">   <strong>Видеорегистраторы</strong></a>
                                             </li>
                                             <li>
-                                                <a href="" title="es_ES">   <strong>es</strong></a>
-                                            </li>
-                                            <li>
-                                                <a href="" title="ru_RU">   <strong>ru</strong></a>
+                                                <a href="" title="ru_RU">   <strong>Комплекты видеонаблюдения</strong></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="footer-links-menu">
-                                        <ul>
-                                            <li><a href="">About Us</a></li>
-                                            <li><a href="">Customer Service</a></li>
-                                            <li><a href="">Template Settings</a></li>
-                                            <li class="last privacy"><a href="">Privacy Policy</a></li>
-                                        </ul>
-                                        <ul class="links-2">
-                                            <li class="first"><a href="">Product Sitemap</a></li>
-                                            <li><a href="">Category Sitemap</a></li>
-                                            <li><a href="">Advanced Search</a></li>
-                                            <li><a href="">Orders and Returns</a></li>
-                                        </ul> </div>
                                 </div>
                             </div>
                             <div class="top-icon-menu">
@@ -186,12 +175,12 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="header">
-                                                <h1 class="logo">
+                                                <div class="logo">
                                                     <strong>CCTV Pro - Магазин Систем Видеонаблюдения</strong>
                                                     <a href="/" title="CCTV Pro - Магазин Систем Видеонаблюдения">
                                                         <img src="/img/logo.png" alt="CCTV Pro - Магазин Систем Видеонаблюдения"/>
                                                     </a>
-                                                </h1>
+                                                </div>
 
                                                 <?=$top_contact?>
 
@@ -292,6 +281,9 @@
                                                                 <script type="text/javascript">decorateList('block-related', 'none-recursive')</script>
                                                             </div>
                                                         </div>
+                                                        
+                                                        <?php if(isset($left_articles_goods)) echo $left_articles_goods; ?>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -316,21 +308,12 @@
                         </div>
                     </div>
                     
-                    
                     <!-- COUNTERS -->
-                    <div style="overflow: hidden; height: 1px; width: 1px; position: absolute; top: -100px; left: -100px">
-                        <!--LiveInternet counter--><script type="text/javascript"><!--
-                        document.write("<img src='//counter.yadro.ru/hit?t26.11;r"+
-                        escape(document.referrer)+((typeof(screen)=="undefined")?"":
-                        ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-                        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-                        ";"+Math.random()+
-                        "' alt='' title='LiveInternet: показано число посетителей за"+
-                        " сегодня' "+
-                        "border='0' width='88' height='15'>")
-                        //--></script>
-                        <!--/LiveInternet-->
-                    </div>
+                    
+                    <?=$counter['li']?>
+                    <?=$counter['yandex']?>
+                    <?=$counter['google']?>
+                    
                     <!-- /COUNTERS -->
 
                 </body>

@@ -654,7 +654,14 @@
 	.addthis_button_google_plusone {clear:left;}
 	
 	.header .logo { width:285px; }
-	
+        .header .top_contact_info{margin-top: 15px;}
+	.header .top_contact_info .top_contact_phone{ font-size: 16px;}
+        .header .top_contact_info .top_contact_address{ font-size: 14px; padding-right: 10px;}
+        .header .top_contact_info .top_contact_icon i.fa-phone{font-size:16px;}
+        .header .top_contact_info .top_contact_icon i{font-size: 14px;}
+        .header .top_contact_info .top_contact_icon{padding-right: 7px;}
+        
+        
 	.banner .banner_holder { top:13px; left:107px; }
 	.banner .banner_holder h2 { font-size:22px; }
 	.banner .banner_holder p { font-size:11px; text-transform:none; }

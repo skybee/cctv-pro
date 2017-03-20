@@ -58,6 +58,8 @@
                             </div>
                         </div>
                         <div class="clear"></div>
+                        
+                        <?php if($goods_info['price'] > 0):?>
                         <div class="add-to-box">
                             <div class="add-to-cart">
                                 <div class="qty-block">
@@ -70,6 +72,7 @@
                             </div>
                             <!--<span class="or">OR</span>-->
                         </div>
+                        <?php endif;?>
                     </div>
                     <div class="clearer"></div>
                 </form>

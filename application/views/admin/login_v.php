@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" type="text/css" href="/css/admin/reset.css" media="all" />
         <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="/css/admin/popup.css" media="all" />
         <link rel="stylesheet" type="text/css" href="/css/admin/admin.css" media="all" />
         

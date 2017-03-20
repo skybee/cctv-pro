@@ -9,6 +9,7 @@ class Main extends CI_Controller{
         parent::__construct();
         
         $this->load->database();
+        $this->load->library('Discount_lib');
         $this->load->model('category_m','category');
         $this->load->model('goods_m', 'goods');
         $this->load->model('info_m', 'info');
@@ -25,7 +26,7 @@ class Main extends CI_Controller{
         $this->cache_do = true;
         
         $this->data['counter']['yandex']    = $this->load->view('component/counter/cnt_yandex_view','',TRUE);
-        $this->data['counter']['google']    = $this->load->view('component/counter/cnt_google_view','',TRUE);
+        $this->data['counter']['google']    = '';#$this->load->view('component/counter/cnt_google_view','',TRUE);
         $this->data['counter']['li']        = $this->load->view('component/counter/cnt_li_view','',TRUE);
     }
     
@@ -45,12 +46,12 @@ class Main extends CI_Controller{
         $tpl_ar['top_contact']          = $this->load->view('cctv-tmp/component/top_contact_schema.org.php', '', TRUE);
         $tpl_ar['cat_menu']             = $this->load->view('cctv-tmp/component/cat_menu_view', $data_ar, TRUE);
         $tpl_ar['top_menu']             = $this->load->view('cctv-tmp/component/top_menu_view', array(), TRUE);
-        $tpl_ar['left_articles_goods']  = $this->load->view('component/left_articles_view', $data_ar, TRUE);
+        $tpl_ar['left_articles_goods']  = $this->load->view('cctv-tmp/component/left_articles_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
         
         $tpl_container['topSlide']      = $this->load->view('cctv-tmp/component/top_slider_view', array(), TRUE);
         $tpl_container['indexCatGrid']  = $this->load->view('cctv-tmp/component/category_grid_2_view', $data_ar, TRUE);
-        $tpl_container['catTxt']        = $this->load->view('cctv-tmp/component/cat_txt_view', $data_ar, TRUE);
+        $tpl_container['catTxt']        = $this->load->view('cctv-tmp/component/cat_txt_visible_view', $data_ar, TRUE);
         
         $tpl_ar['content'] = $this->load->view('cctv-tmp/page-container/index_view', $tpl_container, TRUE);
         
@@ -102,10 +103,10 @@ class Main extends CI_Controller{
             $use_order              = false;
             $html_title_order       = '';
             $data_ar['link_order']  = '';
-            if( $data_ar['child_cat_list'] != NULL )
+//            if( $data_ar['child_cat_list'] != NULL )
                 $order = 'rank';
-            else
-                $order = 'price';
+//            else
+//                $order = 'price';
         }
         $data_ar['order_val'] = $order;
         
@@ -156,7 +157,7 @@ class Main extends CI_Controller{
         $tpl_ar['top_contact']          = $this->load->view('cctv-tmp/component/top_contact', '', TRUE);
         $tpl_ar['cat_menu']             = $this->load->view('cctv-tmp/component/cat_menu_view', $data_ar, TRUE);
         $tpl_ar['top_menu']             = $this->load->view('cctv-tmp/component/top_menu_view', array(), TRUE);
-        $tpl_ar['left_articles_goods']  = $this->load->view('component/left_articles_view', $data_ar, TRUE);
+        $tpl_ar['left_articles_goods']  = $this->load->view('cctv-tmp/component/left_articles_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
         
 //        print_r($tpl_container);
@@ -246,7 +247,7 @@ class Main extends CI_Controller{
 //        $tpl_ar['content']              = $this->load->view('component/top_slider_view', array(), TRUE);
         $tpl_ar['content']              = $this->load->view('cctv-tmp/page-container/info_view', $data_ar, TRUE);
         $tpl_ar['top_menu']             = $this->load->view('cctv-tmp/component/top_menu_view', array(), TRUE);
-        $tpl_ar['left_articles_goods']  = $this->load->view('component/left_articles_view', $data_ar, TRUE);
+//        $tpl_ar['left_articles_goods']  = $this->load->view('cctv-tmp/component/left_articles_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
         
         $this->load->view('cctv-tmp/main_view', $tpl_ar );
@@ -363,7 +364,7 @@ class Main extends CI_Controller{
         $tpl_ar['top_menu']             = $this->load->view('component/top_menu_view', array(), TRUE);
         $tpl_ar['left_articles_goods']  = $this->load->view('component/left_goods_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
-        $tpl_ar['counter']['li']        = '';
+        $tpl_ar['counter']['yandex']    = '';
         
         $this->load->view('main_view', $tpl_ar );
     }
@@ -391,7 +392,7 @@ class Main extends CI_Controller{
         $data_ar['catname_list']        = $this->category->get_category_list();
         $data_ar['main_menu_list']      = $this->info->get_page_list();
         $data_ar['main_cat_id']         = false;
-        $data_ar['left_goods_list']     = $this->goods->get_like_str_goods( $data_ar['info_ar']['title'].' '.$this->articles->get_short_txt( $data_ar['info_ar']['text'] ,300), 8, 12 );
+        $data_ar['left_goods_list']     = $this->goods->get_like_str_goods( $data_ar['info_ar']['title'].' '.$this->articles->get_short_txt( $data_ar['info_ar']['text'] ,300), 10, 12 );
 
         $data_ar['info_ar']['text']     = article_linkator( $data_ar['info_ar']['text'] );
         $data_ar['city_link']           = get_city_link( $_SERVER['REQUEST_URI'] );
@@ -405,9 +406,9 @@ class Main extends CI_Controller{
 //        $tpl_ar['content']              = $this->load->view('component/top_slider_view', array(), TRUE);
         $tpl_ar['content']              = $this->load->view('cctv-tmp/page-container/article_view', $data_ar, TRUE);
         $tpl_ar['top_menu']             = $this->load->view('cctv-tmp/component/top_menu_view', array(), TRUE);
-        $tpl_ar['left_articles_goods']  = $this->load->view('component/left_goods_view', $data_ar, TRUE);
+        $tpl_ar['left_articles_goods']  = $this->load->view('cctv-tmp/component/left_goods_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
-        $tpl_ar['counter']['li']        = '';
+        $tpl_ar['counter']['yandex']    = '';
         
         $this->load->view('cctv-tmp/main_view', $tpl_ar );
     }

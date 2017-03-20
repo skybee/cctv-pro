@@ -15,6 +15,10 @@ function price_explode( $price ){
         $price_new_ar[2] = ''; 
     }
     
+    if($price == 0){
+        return '<span class="price_cent" style="color:#919191;">нет в наличии</span>';
+    }
+    
     return '<span class="price_thousand">'.$price_new_ar[1].'</span>'.$price_new_ar[2].'.<span class="price_cent">'.$cent.' &nbsp;грн.</span>';
 }
 

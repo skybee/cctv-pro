@@ -99,7 +99,9 @@ class Articles_m extends CI_Model{
     
     function get_short_txt( $text, $length = 100 ){
         $text = strip_tags($text);
-        return mb_substr($text, 0, $length).'...';
+        $text = mb_substr($text, 0, $length);
+        $text = preg_replace("#\.[^\.]+$#i", '.', $text);
+        return $text;
     }
     
     function get_like_article( $str, $cnt_return=10, $cnt_select=10, $str_length = 200, $this_id=0, $order = FALSE ){

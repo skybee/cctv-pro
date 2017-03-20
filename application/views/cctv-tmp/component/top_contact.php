@@ -1,8 +1,8 @@
 <div class="top_contact_info">
     <div class="top_contact_phone">
-        (068) 566-93-03 <br />
-        (095) 883-63-14 <br />
-        (063) 368-08-40
+        <a href="tel:0685669303">(068) 566-93-03</a> <br />
+        <a href="tel:0958836314">(095) 883-63-14</a> <br />
+        <a href="tel:0633680840">(063) 368-08-40</a>
     </div>
     <div class="top_contact_icon">
         <i class="fa fa-phone fa-2x"></i>

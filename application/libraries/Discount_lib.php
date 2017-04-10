@@ -3,7 +3,7 @@
 class Discount_lib{
     private $city = false, 
             $cookie_name = 'user_city',
-            $cookie_expire = 3600*10,
+            $cookie_expire = 36000,
             $not_discount_city = array('not-UA','Kharkov','Kiev'),
             $check_discount = 'undefined';
     

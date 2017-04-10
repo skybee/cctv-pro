@@ -102,7 +102,7 @@ if( $_SERVER['HTTP_HOST'] == 'cctv-pro.lh' ){
     $db['default']['password'] = 'mysql';
     $db['default']['database'] = 'cctv-pro'; // hc | cctv-pro
     
-    $db['default']['hostname'] = 'cctv-pro.com.ua';
+    $db['default']['hostname'] = '5.9.104.44';
     $db['default']['username'] = 'admin_cctv_pro';
     $db['default']['password'] = 'cctv-pro-qwerty';
     $db['default']['database'] = 'admin_cctv_pro';

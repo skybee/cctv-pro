@@ -54,6 +54,11 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
 
+    if(!isset($_SERVER['HTTP_X_REAL_IP']) OR empty($_SERVER['HTTP_X_REAL_IP'])){
+        $_SERVER['HTTP_X_REAL_IP'] = $_SERVER['REMOTE_ADDR'];
+    }
+
+
     if($_SERVER['HTTP_X_REAL_IP']=='178.150.106.188'){
         sleep(rand(1,15));
     }

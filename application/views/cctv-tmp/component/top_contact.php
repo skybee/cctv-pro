@@ -10,7 +10,7 @@
     <div class="top_contact_address">
         Пн.-Пт. 09:00 - 18:00 <br />
         mail@cctv-pro.com.ua <br />
-        г. Харьков 
+        г. Харьков, ул. Шатилова Дача 4 
     </div>
     <div class="top_contact_icon">
         <i class="fa fa-calendar fa-2x"></i><br />

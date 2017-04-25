@@ -10,7 +10,7 @@
     <div class="top_contact_address">
         <span itemprop="openingHours" datetime="Mo-Fr 09:00-18:00">Пн.-Пт. 09:00 - 18:00 <br />
         <span itemprop="email">mail@cctv-pro.com.ua</span> <br />
-        <span itemprop="address">г. Харьков, <i style="display:none;">ул. Шатилова Дача 4</i> </span> 
+        <span itemprop="address">г. Харьков, ул. Шатилова Дача 4 </span> 
     </div>
     <div class="top_contact_icon">
         <i class="fa fa-calendar fa-2x"></i><br />

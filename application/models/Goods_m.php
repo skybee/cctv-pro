@@ -24,7 +24,7 @@ class Goods_m extends CI_Model{
         return $row;
     }
     
-    function get_goods_from_cat($cat_id_ar, $page = 1, $cnt_on_page = 15, $sort = 'rank' ){
+    function get_goods_from_cat($cat_id_ar, $page = 1, $cnt_on_page = 15, $sort = 'price' ){
         $stop   = $page * $cnt_on_page;
         $start  = $stop - $cnt_on_page;
         

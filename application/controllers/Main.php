@@ -104,7 +104,7 @@ class Main extends CI_Controller{
             $html_title_order       = '';
             $data_ar['link_order']  = '';
 //            if( $data_ar['child_cat_list'] != NULL )
-                $order = 'rank';
+                $order = 'price';
 //            else
 //                $order = 'price';
         }

@@ -469,13 +469,77 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 	border: 1px solid #DDDDDD;
 	padding:8px 19px;
 	margin:0 0 30px;
-	overflow:hidden;
+	/*overflow:hidden;*/
+        height: 40px;
 }
 .breadcrumbs li { float:left; }
 .breadcrumbs li a {text-decoration:none; }
 .breadcrumbs li a:hover {}
 .breadcrumbs li span {	display:inline-block;	margin:0 8px 0 6px;}
 .breadcrumbs li strong {font-weight:normal; }
+
+/* CCTV BreadCrumbs */
+.my_breadcrumb { 
+    /*margin: 10px 0px;*/ 
+    /*padding: 7px 20px;*/
+    /*background: #fff;*/
+    /*border-radius: 5px;*/
+    /*border: solid 1px #E6ECF0;*/
+    
+    /*box-shadow: 0px 0px 5px 2px rgba(0, 56, 91, 0.05);*/
+    /*background-color: #EEF5F7;*/
+}
+.my_breadcrumb li{ display: inline; /*color: #12354E; font-size: 12px; padding: 0px 1px;*/ position: relative; }
+/*.my_breadcrumb li a{ font-size: 13px; text-decoration: underline; }*/
+/*.my_breadcrumb li a:hover{ text-decoration: underline; color: #0E3A5A; }*/
+.breadcrumb_fixed_active{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    /*border-radius: 0px 0px 4px 4px;*/
+    box-shadow: 0px 0px 8px 2px rgba(133, 177, 211, 0.6);
+    
+    /*opacity: 0.7;*/
+}
+.breadcrumb_fixed_active:hover{opacity: 1;}
+.breadcrumb_child_list{
+    position: absolute;
+    top: 21px; left: -6px;
+    width: 250px; 
+    display: none;
+    z-index: 2;
+}
+.my_breadcrumb li:hover .breadcrumb_child_list{ display: block; }
+.bcl_a_block{ 
+    margin: 10px 0px;
+    padding: 15px 13px;
+    background-color: #fff;
+    background-color: #FBFBFB;
+    box-shadow: 0px 3px 8px 2px rgba(133, 177, 211, 0.6);
+    border-radius: 0px 0px 4px 4px;
+}
+.bcl_a_block a{ 
+    display: block; 
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    border-bottom: 1px solid #d4dadd;
+    text-decoration: none !important;
+}
+.breadcrumbs li .bcl_a_block span{display:inline; margin:0;}
+.bcl_arow{
+    display: none;
+    
+    position: absolute;
+    width: 0px; height: 0px;
+    top: 1px; 
+    left: 10px;
+    border: 5px solid #fff;
+    border-color: rgba(255,255,255,0); 
+    border-top: 8px solid #51a9ed;
+    border-bottom-width: 0px;
+}
+/* /CCTV BreadCrumbs */
 
 /* Page Heading */
 .page-title,

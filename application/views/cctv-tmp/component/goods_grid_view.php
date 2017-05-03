@@ -18,7 +18,7 @@
     ?>
     <li class="item <?php if($ii == 0) echo 'first'; ?> col-xs-12 col-sm-4">
         <div class="grid_wrap">
-            <a href="<?=$goodsLink;?>" title="<?=$tagGoodsName?>" class="product-image">
+            <a href="<?=$goodsLink;?>" title="<?=$tagGoodsName?>" class="product-image" target="_blank">
                 <span class="googs-img-tbl" >
                     <span class="googs-img-tr">
                         <span class="googs-img-td">
@@ -29,7 +29,7 @@
             </a>
             <div class="product-shop">
                 <h2 class="product-name">
-                    <a href="<?=$goodsLink;?>" title="<?=$tagGoodsName?>"><?=$goods_list[$i]['name']?></a>
+                    <a href="<?=$goodsLink;?>" title="<?=$tagGoodsName?>" target="_blank"><?=$goods_list[$i]['name']?></a>
                 </h2>
                 <div class="desc_grid" title="<?= htmlspecialchars( $goods_list[$i]['short_description'] )?>">
                     <?=$goods_list[$i]['short_description']?>

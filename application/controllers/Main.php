@@ -58,7 +58,7 @@ class Main extends CI_Controller{
         $this->load->view('cctv-tmp/main_view', $tpl_ar );
     }
     
-    function category( $category = false, $page = false, $city = false, $order = false ){
+    function category( $category = false, $page = false, $city = false, $order = false, $nameFilter=false ){
 //        if( $this->cache_do ) $this->output->cache(10);
         
         $page = abs( (int) $page );
@@ -79,6 +79,9 @@ class Main extends CI_Controller{
         $data_ar['breadcrumb_list']             = $this->category->get_breadcrumb( $data_ar['cat_info']['id'] );
         $data_ar['child_cat']['first_level']    = $this->category->get_child_id_first_level( $data_ar['cat_info']['id'] );
         $data_ar['child_cat_list']              = $this->category->get_child_cat( $data_ar['cat_info']['id'] );
+        $data_ar['name_filter_list']            = $this->category->get_brand_list( $data_ar['cat_info']['id'] );
+        $nameFilterData                         = $this->goods->getNameFilterData($nameFilter);
+        $data_ar['name_filter_data']            = $nameFilterData;
         
         if( $city == 'order' ){  
             $city                   = false;
@@ -110,16 +113,25 @@ class Main extends CI_Controller{
         }
         $data_ar['order_val'] = $order;
         
+        if($nameFilter == false){
+            $data_ar['brand_val'] = 'allbrands';
+        }
+        else{
+            $data_ar['brand_val'] = $nameFilterData['name'];
+        }
+        
         $data_ar['child_cat']['all_level']      = $this->category->get_child_id_all_level( $data_ar['cat_info']['id'] );
         $data_ar['child_cat']['all_level'][]    = $data_ar['cat_info']['id'];
-        $data_ar['goods_list']                  = $this->goods->get_goods_from_cat( $data_ar['child_cat']['all_level'], $page, 15, $order );
-        $data_ar['pager_ar']                    = $this->goods->get_pager_ar(       $data_ar['child_cat']['all_level'], $page, 15 );
+        $data_ar['goods_list']                  = $this->goods->get_goods_from_cat( $data_ar['child_cat']['all_level'], $page, 15, $order, $nameFilter );
+        $data_ar['pager_ar']                    = $this->goods->get_pager_ar(       $data_ar['child_cat']['all_level'], $page, 15, 3, $nameFilter );
         $data_ar['main_menu_list']              = $this->info->get_page_list();
         $data_ar['main_cat_id']                 = $data_ar['breadcrumb_list'][0]['id'];
-        if( isset($data_ar['breadcrumb_list'][1]['id']) )
+        if( isset($data_ar['breadcrumb_list'][1]['id']) ){
             $data_ar['child_cat_id']            = $data_ar['breadcrumb_list'][1]['id'];
-        else
+        }
+        else{
             $data_ar['child_cat_id']            = false;
+        }
         $data_ar['child_main_cat']              = $this->category->get_child_cat( $data_ar['main_cat_id'] );
         $data_ar['left_articles_list']          = $this->articles->get_like_article( $this->articles->get_str_from_breadcrumb( $data_ar['breadcrumb_list'] ) , 4, 20, 500 );
         
@@ -129,9 +141,25 @@ class Main extends CI_Controller{
             }
         }
         
+        
+        // Brand Name Filter
+        if(is_array($nameFilterData)){
+            $data_ar['cat_info']['html_title']  = $nameFilterData['html_title'];
+            $data_ar['cat_info']['h1']          = $nameFilterData['page_title'];
+            $data_ar['cat_info']['text']        = $nameFilterData['page_text'];
+            
+            
+            if($page<=1&&$order=='price'){ //костыль для показа текста бренда
+                $use_order      = false;
+                $url_page_isset = false;
+            }
+        }
+        // /Brand Name Filter
+        
+        
         $tpl_ar['head_data']                = &$data_ar['cat_info'];
         if( !$city )
-            $tpl_ar['head_data']['html_title']      .= ' Харьков - CCTV Pro, Украина';
+            $tpl_ar['head_data']['html_title']      .= ' - "CCTV PRO" Украина';
         if( $page > 1 ){
             $tpl_ar['head_data']['html_title']          .= ' - страница '.$page;
             $tpl_ar['head_data']['html_description']    .= ' - страница '.$page;

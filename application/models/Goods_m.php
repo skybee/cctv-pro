@@ -3,6 +3,8 @@
 
 class Goods_m extends CI_Model{
 
+    private $nameFilterData=false;
+    
     function __construct(){
         parent::__construct();
         
@@ -24,7 +26,31 @@ class Goods_m extends CI_Model{
         return $row;
     }
     
-    function get_goods_from_cat($cat_id_ar, $page = 1, $cnt_on_page = 15, $sort = 'price' ){
+    function getNameFilterData($filterStr){
+        
+        if($this->nameFilterData != false){
+            return $this->nameFilterData; 
+        }
+        
+        $filterID = $this->getUrlNameFilterID($filterStr);
+        
+        if(!$filterID){return false;}
+        
+        $sql    = "SELECT * FROM `category_filter` WHERE `id`='{$filterID}' LIMIT 1";
+        $query  = $this->db->query($sql);
+        $row    = $query->row_array();
+        
+        if($row!=false && is_array($row)){
+            $this->nameFilterData = $row;
+            return $row;
+        }
+        else{ 
+            return false;
+        }
+        
+    }
+    
+    function get_goods_from_cat($cat_id_ar, $page = 1, $cnt_on_page = 15, $sort = 'price', $nameFilter=false ){
         $stop   = $page * $cnt_on_page;
         $start  = $stop - $cnt_on_page;
         
@@ -51,6 +77,16 @@ class Goods_m extends CI_Model{
                 break;
         }
         
+        // Brand Name Filter
+        $nameFilterData = $this->getNameFilterData($nameFilter);
+        
+        if(is_array($nameFilterData)){
+            $sqlNameFilter = " AND goods.name LIKE '%{$nameFilterData['name']}%' ";
+        }
+        else{
+            $sqlNameFilter = "";
+        }
+        // /Brand Name Filter
         
 //        $query_str = "  SELECT 
 //                            goods.id, goods.name, goods.short_description, goods.main_img, goods.url_name, goods.price, category.name AS 'cat_name'
@@ -74,6 +110,7 @@ class Goods_m extends CI_Model{
                             `goods`, `category`, `category_goods`
                         WHERE
                             goods.price > 0
+                            {$sqlNameFilter}
                             AND
                             category_goods.goods_id     = goods.id
                             AND
@@ -96,7 +133,7 @@ class Goods_m extends CI_Model{
         return $result_ar;
     }
     
-    function get_pager_ar( $cat_id_ar, $page = 1, $cnt_on_page = 15, $page_left_right = 3 ){
+    function get_pager_ar( $cat_id_ar, $page = 1, $cnt_on_page = 15, $page_left_right = 3, $nameFilter=false ){
         $cnt_cat_id = count($cat_id_ar);
         $where_id = '';
         for($i=0; $i<$cnt_cat_id; $i++){
@@ -105,12 +142,25 @@ class Goods_m extends CI_Model{
             $where_id .= $cat_id_ar[$i];
         }
         
+        // Brand Name Filter
+        $nameFilterData = $this->getNameFilterData($nameFilter);
+        
+        if(is_array($nameFilterData)){
+            $sqlNameFilter = " AND goods.name LIKE '%{$nameFilterData['name']}%' ";
+        }
+        else{
+            $sqlNameFilter = "";
+        }
+        // /Brand Name Filter
+        
+        
         $query_str = "  SELECT 
                             COUNT(goods.id) AS 'count'
                         FROM 
                             `goods`, `category`, `category_goods`
                         WHERE
                             goods.price > 0
+                            {$sqlNameFilter}
                             AND
                             category_goods.goods_id     = goods.id
                             AND
@@ -528,6 +578,21 @@ class Goods_m extends CI_Model{
         $tpl = str_replace('#name#', $goodsName, $tpl);
         
         return $tpl;
+    }
+    
+    private function getUrlNameFilterID($filterStr){
+        $parrent = "#-(\d{1,3})$#i";
+        
+        preg_match($parrent, $filterStr, $resAr);
+        
+        if(isset($resAr[1])){
+            $id = (int) $resAr[1];
+            if($id > 0){
+                return $id;
+            }
+        }
+        
+        return false;
     }
 }
 

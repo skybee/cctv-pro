@@ -124,6 +124,20 @@ class Category_m extends CI_Model{
                 
     }
     
+    function get_brand_list($cat_id){
+        $sql    = "SELECT * FROM `category_filter` WHERE `cat_id` = '{$cat_id}' ORDER BY `name` ASC ";
+        $query  = $this->db->query($sql);
+        $result = false;
+        
+        if ($query->num_rows() > 0){
+            foreach ($query->result_array() as $row){
+                $result[] = $row;
+            }
+        }
+        
+        return $result;
+    }
+    
     private function id_tree_construct(){
         $query = $this->db->query("SELECT `id`, `parent_id` FROM `category`");
         

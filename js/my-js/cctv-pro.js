@@ -317,6 +317,8 @@ function input_check_phone( input ){
 function goods_order_link(){
     order_val = jQuery('#goods_sorter').attr('rel');
     jQuery('a#'+order_val).addClass('active');
+    brand_val = jQuery('#brand_sorter').attr('rel');
+    jQuery('a#'+brand_val).addClass('active');
 }
 
 function set_center_window(){

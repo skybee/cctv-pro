@@ -3,71 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-<!--            <ul id="nav" class="sf-menu">
-                <li class="level0 nav-1 first level-top">
-                    <a href="" class="level-top">
-                        <span>Accessoriess</span>
-                    </a>
-                </li>
-                <li class="level0 nav-2 level-top parent">
-                    <a href="" class="level-top">
-                        <span>Tyres</span>
-                    </a>
-                    <ul class="level0">
-                        <li class="level1 nav-2-1 first parent">
-                            <a href="">
-                                <span>Brand</span>
-                            </a>
-                            <ul class="level1">
-                                <li class="level2 nav-2-1-1 first">
-                                    <a href="">
-                                        <span>Bridgestone</span>
-                                    </a>
-                                </li>
-                                <li class="level2 nav-2-1-2 last">
-                                    <a href="">
-                                        <span>Goodyear</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="level1 nav-2-2 last">
-                            <a href="">
-                                <span>Size</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="level0 nav-3 last level-top parent">
-                    <a href="" class="level-top">
-                        <span>Wheels</span>
-                    </a>
-                    <ul class="level0">
-                        <li class="level1 nav-3-1 first parent">
-                            <a href="">
-                                <span>Brand</span>
-                            </a>
-                            <ul class="level1">
-                                <li class="level2 nav-3-1-1 first">
-                                    <a href="">
-                                        <span>ATS</span>
-                                    </a>
-                                </li>
-                                <li class="level2 nav-3-1-2 last">
-                                    <a href="">
-                                        <span>Fondmetal</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="level1 nav-3-2 last">
-                            <a href="">
-                                <span>Size</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li> 
-            </ul>-->
+            
             <div class="sf-menu-block">
                 <div id="menu-icon">Каталог товаров</div>
                 <ul class="sf-menu-phone">
@@ -112,69 +48,6 @@
                     </li>
                     <?php endforeach; ?>
                     
-<!--                    <li class="level0 nav-1 first level-top">
-                        <a href="" class="level-top">
-                            <span>Accessoriess</span>
-                        </a>
-                    </li>
-                    <li class="level0 nav-2 level-top parent">
-                        <a href="" class="level-top">
-                            <span>Tyres</span>
-                        </a>
-                        <ul class="level0">
-                            <li class="level1 nav-2-1 first parent">
-                                <a href="">
-                                    <span>Brand</span>
-                                </a>
-                                <ul class="level1">
-                                    <li class="level2 nav-2-1-1 first">
-                                        <a href="">
-                                            <span>Bridgestone</span>
-                                        </a>
-                                    </li>
-                                    <li class="level2 nav-2-1-2 last">
-                                        <a href="">
-                                            <span>Goodyear</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level1 nav-2-2 last">
-                                <a href="">
-                                    <span>Size</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level0 nav-3 last level-top parent">
-                        <a href="" class="level-top">
-                            <span>Wheels</span>
-                        </a>
-                        <ul class="level0">
-                            <li class="level1 nav-3-1 first parent">
-                                <a href="">
-                                    <span>Brand</span>
-                                </a>
-                                <ul class="level1">
-                                    <li class="level2 nav-3-1-1 first">
-                                        <a href="">
-                                            <span>ATS</span>
-                                        </a>
-                                    </li>
-                                    <li class="level2 nav-3-1-2 last">
-                                        <a href="">
-                                            <span>Fondmetal</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level1 nav-3-2 last">
-                                <a href="">
-                                    <span>Size</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
         </div>

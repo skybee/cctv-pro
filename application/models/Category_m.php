@@ -138,6 +138,36 @@ class Category_m extends CI_Model{
         return $result;
     }
     
+    function get_two_level_menu($pid=0){
+        $result_ar  = array();
+        $cache_id   = 'two_level_menu';
+        $cache_time = 600; //10 minutes
+        
+        if( $result_ar = $this->cache->file->get($cache_id) ){
+            return  $result_ar;
+        }
+        
+        $firstLvlAr = $this->get_category_list($pid);
+        
+        if(is_array($firstLvlAr)){
+            foreach($firstLvlAr as $key => $valAr){
+                $subMenuAr = $this->get_category_list($valAr['id']);
+                if(is_array($subMenuAr) && count($subMenuAr)>=2){
+                    $firstLvlAr[$key]['submenu'] = $subMenuAr;
+                }
+                else{
+                    $firstLvlAr[$key]['submenu'] = false;
+                }
+            }
+        
+            $result_ar = $firstLvlAr;
+        }
+        
+        $this->cache->file->save( $cache_id, $result_ar , $cache_time );
+        
+        return $result_ar;
+    }
+    
     private function id_tree_construct(){
         $query = $this->db->query("SELECT `id`, `parent_id` FROM `category`");
         

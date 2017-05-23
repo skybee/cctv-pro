@@ -28,6 +28,10 @@ class Main extends CI_Controller{
         $this->data['counter']['yandex']    = $this->load->view('component/counter/cnt_yandex_view','',TRUE);
         $this->data['counter']['google']    = '';#$this->load->view('component/counter/cnt_google_view','',TRUE);
         $this->data['counter']['li']        = $this->load->view('component/counter/cnt_li_view','',TRUE);
+        
+        $two_level_menu['menuData']         = $this->category->get_two_level_menu(0);
+//        print_r($two_level_menu['menuData']);
+        $this->data['two_level_menu_view']  = $this->load->view('cctv-tmp/component/mobile_cat_menu_view', $two_level_menu, TRUE);
     }
     
     function index(){

@@ -59,6 +59,13 @@
                         <div class="admin_button" onclick="send_form('#multiply_price_all_form', {title: 'Умножение цен', content: 'loader'})" >ОК</div>
                     </div>
                 </div>
+                <div class="menu_spacer"></div>
+                <a href="/doc_form/check/"      target="_blank">Чек+Гарантия</a>
+                <a href="/doc_form/invoice/"    target="_blank">Счет</a>
+                <a href="/doc_form/proposal/"   target="_blank">Ком. Предложение</a>
+                <a href="/doc_form/bill/"       target="_blank">Накладная</a>
+                <a href="/doc_form/act/"        target="_blank">Акт работ</a>
+                <a href="/doc_form/repair/"     target="_blank">Талон Ремонта</a>
             </div>
 
             <div id="right_content_block">

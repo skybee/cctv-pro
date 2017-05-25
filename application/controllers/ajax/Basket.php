@@ -138,7 +138,7 @@ class Basket extends CI_Controller{
                     $this->email->clear();
                     $this->email->initialize($mail_conf);
                     $this->email->from('mail@cctv-pro.com.ua', 'CCTV');
-                    //$this->email->to('380984270125@sms.kyivstar.net');
+                    $this->email->to('380685669303@sms.kyivstar.net');
                     $this->email->subject( 'Заказ #'.$data_ar['order_id'] );
                     $this->email->message( $sms_txt );
                     

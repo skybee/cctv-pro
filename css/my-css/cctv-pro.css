@@ -551,3 +551,141 @@ button.button:hover > span,
   height: 100%;
 }
 /*</VIDEO RESPONSIVE>*/
+
+
+/*== <docs> ==*/
+/*====== Товарный ЧеК ========*/
+
+.docs_form{
+    background-color: #FbFbFb;
+    padding: 15px;
+}
+
+.docs_form input, .docs_form select, .docs_form textarea, .docs_form button{
+    font-size: 14px;
+}
+
+.docs_form h1{
+    margin-bottom: 20px;
+}
+
+.docs_form td{ padding: 3px 7px;}
+.docs_form #check_tbl{}
+.docs_form #check_tbl td{
+    vertical-align: top;
+}
+.docs_form #printcheck_form input{
+    padding: 4px 7px 3px 7px;
+}
+.docs_form #printcheck_form input[type=text]{
+    border: 1px solid  #2b2b2b;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    /*background: #E3EEF4; #EDF8FF;*/
+}
+.docs_form #check_tbl tr td:nth-child(1) input{
+        width: 20px;
+}
+.docs_form #check_tbl tr td:nth-child(2) input{
+        width: 395px;
+}
+.docs_form #check_tbl tr td:nth-child(3) input, #check_tbl tr td:nth-child(4) input{
+        width: 50px;
+        text-align: center;
+}
+.docs_form #check_tbl tr td:nth-child(5) input{
+        width: 70px;
+        text-align: right;
+}
+.docs_form #check_tbl tr td:nth-child(6) input{
+        width: 50px;
+        text-align: right;
+}
+
+.docs_form #check_btn_block{
+    margin: 20px 0px 0px 35px;
+    
+}
+    /* гарантия */
+.docs_form #check_tbl .wrnt_input_block{
+    margin-top: 3px;
+    font-size: 11px;
+    display: none;
+}
+.docs_form #check_tbl .wrnt_input_block_show{ display: block !important; }
+.docs_form #check_tbl .wrnt_input_block input:nth-child(1){
+    width: 240px;
+    margin-right: 33px;
+}
+.docs_form #check_tbl .wrnt_input_block input:nth-child(2){
+    width: 60px;
+}
+    /* /гарантия */
+    
+.docs_form .checkname_select_block{ text-align: center;}
+.docs_form .checkname_select_block select{
+    margin-top: 0px;
+    border: 1px solid #D4DADD;
+    border-radius: 3px;
+    /*background-color: #E3EEF4;*/
+    padding: 0px 0px 0px 5px;
+}
+/*========= Счет фактура =====*/
+.docs_form #invoice_input_block{
+    padding-left: 35px;
+}
+.docs_form #invoice_input_block input[name=invoice_number], #invoice_input_block input[name="act_number"]{
+    width: 70px;
+}
+.docs_form #invoice_input_block input[name="client"], #invoice_input_block input[name=recipient], #invoice_input_block input[name=payer], #invoice_input_block input[name=basis]{
+    width: 548px;
+}
+
+/*========= Накладная =====*/
+
+
+/*========= < Выбор ФЛП > =========*/
+.docs_form div.select_flp{
+    height: 26px;
+    background: #e6eef2;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 15px;
+    color: #000;
+}
+.docs_form div.select_flp span{
+    font-size: 14px;
+    color: #0E3A5A;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 50px;
+}
+/*========= </ Выбор ФЛП > =========*/
+
+/*========= < Load Form > =========*/
+.load_form{
+    border: 1px solid #D4DADD;
+    margin: 10px 0px 20px 35px;
+    padding: 3px 0px 3px 10px;
+    /*line-height: 20px;*/
+    background: #F4F9F9;
+    border-radius: 4px;
+    font-weight: bold;
+    /*width: 548px;*/
+}
+.load_form input[type=file] {
+    margin-left: 50px;
+    width: 270px;
+}
+#load_filelist_btn{float: right; margin-right: 10px;}
+#save_list{margin-top: 50px;}
+/*========= </ Load Form > =========*/
+
+.load_form #load_check_filelist{
+    width: 350px; 
+    display: inline-block;
+}
+
+/*== </docs> ==*/

@@ -14,7 +14,7 @@ class Print_docs extends CI_Controller{
     function prnt_doc ( $doc_name ){
         if( isset($_POST['doc_number']) )
             $this->docs->set_doc_number( $doc_name, $_POST['doc_number'] );
-        $this->load->view('docs/print/'.$doc_name.'_view');
+        $this->load->view('cctv-tmp/docs/print/'.$doc_name.'_view');
     }
     
 }

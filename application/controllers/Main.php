@@ -247,7 +247,7 @@ class Main extends CI_Controller{
         $tpl_ar['top_contact']          = $this->load->view('cctv-tmp/component/top_contact', '', TRUE);
         $tpl_ar['cat_menu']             = $this->load->view('cctv-tmp/component/cat_menu_view', $data_ar, TRUE);
         $tpl_ar['top_menu']             = $this->load->view('cctv-tmp/component/top_menu_view', array(), TRUE);
-        $tpl_ar['left_articles_goods']  = $this->load->view('component/left_articles_view', $data_ar, TRUE);
+        $tpl_ar['left_articles_goods']  = $this->load->view('cctv-tmp/component/left_articles_view', $data_ar, TRUE);
         $tpl_ar['breadcrumb']           = $this->load->view('cctv-tmp/component/breadcrumb_view', $data_ar, TRUE);
         $tpl_ar['content']              = $this->load->view('cctv-tmp/page-container/goods_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
@@ -341,13 +341,13 @@ class Main extends CI_Controller{
         $tpl_ar['head_data']['html_keywords']       = '';
         
         $tpl_ar['top_contact']          = $this->load->view('cctv-tmp/component/top_contact', '', TRUE);
-        $tpl_ar['cat_menu']             = $this->load->view('component/cat_menu_view', $data_ar, TRUE);
-        $tpl_ar['content']              = $this->load->view('docs/forms/'.$doc_name.'_view', $data_ar, TRUE);
-        $tpl_ar['top_menu']             = $this->load->view('component/top_menu_view', array(), TRUE);
-        $tpl_ar['left_articles_goods']  = $this->load->view('component/left_articles_view', $data_ar, TRUE);
+        $tpl_ar['cat_menu']             = $this->load->view('cctv-tmp/component/cat_menu_view', $data_ar, TRUE);
+        $tpl_ar['content']              = $this->load->view('cctv-tmp/docs/forms/'.$doc_name.'_view', $data_ar, TRUE);
+        $tpl_ar['top_menu']             = $this->load->view('cctv-tmp/component/top_menu_view', array(), TRUE);
+        $tpl_ar['left_articles_goods']  = $this->load->view('cctv-tmp/component/left_articles_view', $data_ar, TRUE);
         $tpl_ar['counter']              = $this->data['counter'];
         
-        $this->load->view('main_view', $tpl_ar );
+        $this->load->view('cctv-tmp/main_view', $tpl_ar );
     }
     
     function articles($page=1, $tags_name=false, $lock=false){

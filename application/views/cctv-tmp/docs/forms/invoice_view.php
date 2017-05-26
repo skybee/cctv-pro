@@ -8,7 +8,9 @@
 
             <form action="/print_docs/prnt_doc/invoice/" target="_blank" method="post" id="printcheck_form" enctype="multipart/form-data" >
                 
-                <div class="select_flp">
+                <input type="hidden" name="headTpl" value="invoice_info" />
+                
+<!--                <div class="select_flp">
                     <span>Выбор ФЛП:</span>
                     
                     <label>
@@ -20,7 +22,7 @@
                         <input type="radio" name="flp" value="pan" checked="checked" />
                         Панасенко И.С.
                     </label>
-                </div>
+                </div>-->
                 
                 <div id="invoice_input_block">
 

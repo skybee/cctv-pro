@@ -8,6 +8,8 @@
 
             <form action="/print_docs/prnt_doc/act/" target="_blank" method="post" id="printcheck_form" >
                 
+                <input type="hidden" name="headTpl" value="" />
+                
                 <!--
                 <div class="select_flp">
                     <span>Выбор ФЛП:</span>

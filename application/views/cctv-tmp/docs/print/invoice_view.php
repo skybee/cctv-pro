@@ -93,7 +93,8 @@
         <table id="head_tbl">
             <tr>
                 <td>Поставщик:</td>
-                <?php if($_POST['flp'] == 'tor'):?>
+                <!--
+                <?php #if($_POST['flp'] == 'tor'):?>
                     <td>
                         СПД ФЛ Торяник Петр Евгениевич,<br /> 
                         ИНН 2322422151 <br />
@@ -103,7 +104,7 @@
                         Факс: (057) 720-45-54<br />
                         E-mail: mail@cctv-pro.com.ua
                     </td>
-                <?php else: ?>
+                <?php #else: ?>
                     <td>
                         СПД ФЛ Панасенко Игорь Сергеевич,<br /> 
                         ИНН 2301623614 <br />
@@ -113,7 +114,12 @@
                         Факс: (057) 720-45-54<br />
                         E-mail: mail@cctv-pro.com.ua
                     </td>
-                <?php endif; ?>
+                <?php #endif; ?>
+                -->
+                <td>
+                    <!-- top contact information -->
+                    <?=$head_info;?>
+                </td>
             </tr>
             <tr>
                 <td>Отправитель:</td>
@@ -194,11 +200,15 @@
         </p>
         
         <p id="podpis">
-            <?php if($_POST['flp'] == 'tor'):?>
+            <!--
+            <?php #if($_POST['flp'] == 'tor'):?>
             СПД &nbsp;ФЛ  &nbsp; Торяник П.Е.
-            <?php else:?>
+            <?php #else:?>
             СПД &nbsp;ФЛ  &nbsp; Панасенко И.С.
-            <?php endif;?>
+            <?php #endif;?>
+            -->
+            
+            ФЛП  &nbsp; Лысак Е.А.
              ___________
         </p>
     </body>

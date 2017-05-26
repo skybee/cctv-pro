@@ -90,7 +90,10 @@
     </head>
     <body>
         
-        <p>
+        <!-- top contact information -->
+            <?=$head_info;?>
+        
+<!--        <p>
         <table style="font-size: 12px;">
             <tr>
                 <td>от</td>
@@ -118,7 +121,7 @@
                 <td>http://house-control.org.ua</td>
             </tr>
         </table>
-        </p>
+        </p>-->
         
         <center>
             <p id="invoice_number">КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ № <?=$_POST['doc_number']?></p>

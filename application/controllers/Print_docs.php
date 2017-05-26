@@ -12,9 +12,17 @@ class Print_docs extends CI_Controller{
     
     
     function prnt_doc ( $doc_name ){
-        if( isset($_POST['doc_number']) )
+        if( isset($_POST['doc_number']) ){
             $this->docs->set_doc_number( $doc_name, $_POST['doc_number'] );
-        $this->load->view('cctv-tmp/docs/print/'.$doc_name.'_view');
+        }
+        
+        $headTplName = $_POST['headTpl']; 
+        
+//        $headTplName = 'invoice_info'; 
+        
+        $headAr['head_info'] = $this->load->view('cctv-tmp/docs/headers/'.$headTplName.'_v', array(), true); 
+        
+        $this->load->view('cctv-tmp/docs/print/'.$doc_name.'_view',$headAr);
     }
     
 }

@@ -125,18 +125,8 @@
             -->
         <?php #endif; ?>
             
-            <p>
-                Адрес: г. Харьков, ул. Шатилова Дача 4<br />
-                Тел.: (068) 566-93-03 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                (095) 883-63-14 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                (063) 368-08-40<br />
-                E-mail: mail@cctv-pro.com.ua <br />
-                WEB Сайт: http://cctv-pro.com.ua
-            </p>
+            <!-- top contact information -->
+            <?=$head_info;?>
         
         <table id="goods_tbl">
             <tr>
@@ -233,11 +223,8 @@
                 -->
             <?php #endif; ?>
                 
-                <p>
-                    Адрес: г. Харьков, ул. Шатилова Дача 4<br />
-                    Тел.: (068) 566-93-03, (095) 883-63-14, (063) 368-08-40<br />
-                    E-mail: mail@cctv-pro.com.ua
-                </p>
+            <!-- top contact information -->
+            <?=$head_info;?>
 
             <table id="goods_tbl">
                 <tr>
@@ -310,12 +297,12 @@
                 </p>
             </div>
 
-            <p id="podpis">
+<!--            <p id="podpis">
                 Подпись продавца_______________________
                 <span class="client_podpis">
                     Подпись покупателя_______________________
                 </span>
-            </p>
+            </p>-->
         
         </div>
         <?php endif; ?>

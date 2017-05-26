@@ -8,6 +8,8 @@
 
             <form action="/print_docs/prnt_doc/proposal/" target="_blank" method="post" id="printcheck_form" enctype="multipart/form-data" >
                 
+                <input type="hidden" name="headTpl" value="logo_address" />
+                
                 <div id="invoice_input_block">
 
                     Номер предложения:

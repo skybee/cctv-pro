@@ -8,6 +8,8 @@
 
             <form action="/print_docs/prnt_doc/check/" target="_blank" method="post" id="printcheck_form" enctype="multipart/form-data" >
                 
+                <input type="hidden" name="headTpl" value="logo" />
+                
                 <!--
                 <div class="select_flp">
                     <span>Выбор ФЛП:</span>

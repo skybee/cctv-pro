@@ -5,7 +5,9 @@ class Discount_lib{
             $cookie_name = 'user_city',
             $cookie_expire = 36000,
             $not_discount_city = array('not-UA','Kharkov','Kiev'),
-            $check_discount = 'undefined';
+            $check_discount = 'undefined',
+            $real_price = 0,
+            $discount_exist = false;
     
     function __construct() {
         $ci =& get_instance();
@@ -57,12 +59,25 @@ class Discount_lib{
     
     function addDiscount($price,$percent){
         
+        $this->real_price = $price;
+        
         if($this->checkDiscount() === false || $percent <= 0){
             return $price;
         }
+        
+        $this->discount_exist = true;
         
         $new_price = round($price * ( (100 - $percent) / 100)).'.00';
         
         return $new_price;
     }
+    
+//    function getRealPrice(){
+//        if($this->discount_exist !== false && $this->real_price > 0){
+//            return $this->real_price;
+//        }
+//        else{
+//            return false;
+//        }
+//    }
 }

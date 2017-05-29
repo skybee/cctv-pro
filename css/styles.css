@@ -471,6 +471,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 	margin:0 0 30px;
 	/*overflow:hidden;*/
         height: 40px;
+        border-radius:2px;
 }
 .breadcrumbs li { float:left; }
 .breadcrumbs li a {text-decoration:none; }
@@ -497,7 +498,10 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
     top: 0;
     z-index: 3;
     /*border-radius: 0px 0px 4px 4px;*/
-    box-shadow: 0px 0px 8px 2px rgba(133, 177, 211, 0.6);
+    box-shadow: 0px 3px 8px 2px rgba(204, 204, 204, 0.7);
+    border-radius: 0 0 2px 2px;
+    
+    border-width: 0 1px 1px 1px;
     
     /*opacity: 0.7;*/
 }
@@ -515,7 +519,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
     padding: 15px 13px;
     background-color: #fff;
     background-color: #FBFBFB;
-    box-shadow: 0px 3px 8px 2px rgba(133, 177, 211, 0.6);
+    box-shadow: 0px 3px 8px 2px rgba(204, 204, 204, 0.7);
     border-radius: 0px 0px 4px 4px;
 }
 .bcl_a_block a{ 
@@ -555,7 +559,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f4f4', endColorstr='#efeeee', GradientType=0 ); /* IE6-9 */
 	padding:11px 20px 13px 20px;
 	margin:0 0 30px;
-	border-radius:4px;
+	border-radius:2px;
 }
 .category-title {display:block;}
 
@@ -759,13 +763,22 @@ tr.summary-details-excluded { font-style:italic; }
 .header .logo img {max-width:100%; height:auto;}
 
 /* Header ================================================================================ */
-.header-container { background:#fff; padding:23px 0 0; max-width:1230px; margin:0 auto; border-radius:5px 5px 0 0; }
+.header-container { 
+    background:#fff; padding:23px 0 0; max-width:1230px; margin:0 auto; border-radius:5px 5px 0 0; 
+    
+/*    background-image: url('http://www.zukioffroad.com/Tech_Library/images/diagrams/samurai_wiring_diagram.JPG');
+    background-repeat: no-repeat;*/
+    /*background-size: auto auto;*/
+    /*background-position: 325px -30px;*/
+    
+    background: #fcfcff;
+}
 .header { padding:0; position:relative;}
-.header .quick-access { background:#282828 url(/img/bg_links.gif) repeat-x; padding:16px 30px; margin:0 -30px; }
+.header .quick-access { background:#282828 url(/img/bg_links.gif) repeat-x; padding:6px 30px; margin:0 -30px; }
 .header .right_head { float:right; margin:0 0 29px; }
 .header .welcome-msg {float:right; margin:0 22px 10px 0; font-size:15px; font-weight:normal; color:#31a32d; }
 .header .welcome-msg a {}
-.header .links { font-size:16px; font-weight:bold; text-transform:uppercase; }
+.header .links { font-size:16px; font-weight:normal; /*text-transform:capitalize;*/ }
 .header .links li { float:left; padding:2px 21px 4px 0; margin:0 20px 0 0; background:url(/img/tsp.gif) no-repeat 100% 0; }
 .header .links li.last { background:none; margin:0; }
 .header .links li a { display:inline-block; color:#fff; }
@@ -955,14 +968,14 @@ tr.summary-details-excluded { font-style:italic; }
 	padding:9px 16px 10px 16px;
 	margin-bottom:-5px;
 	position:relative;
-	border-radius:4px;
+	border-radius:4px 4px 0 0;
 }
 
 .block .block-title strong {
-	font-size:20px;
+	font-size:18px;
 	line-height:normal;
 	color:#fff;
-	font-weight:bold;
+	font-weight: normal;
 	text-transform:uppercase;
 }
 .block .block-title a { text-decoration:none !important; }
@@ -1239,7 +1252,19 @@ tr.summary-details-excluded { font-style:italic; }
 	 box-sizing: border-box;
 }
 
-.grid_wrap { border:solid 1px #d8d8d8; border-radius:4px; padding:0 20px 20px 20px; }
+.grid_wrap { border:solid 1px #d8d8d8; border-radius:4px; padding:0 20px 20px 20px; position: relative; }
+
+.grid_wrap .grid_wrap_sale{
+    position: absolute;
+    right: -1px; top:20px;
+    width: 60px; height: 30px; background-color: #f44336;
+    z-index: 2;
+    color: #fff; 
+    /*font-weight: bold;*/
+    font-size: 24px; line-height: 30px;
+    padding-left: 10px;
+    border-radius: 3px 0px 0px 3px;
+}
 
 .products-grid li.last{ margin-right:0;}
 .products-grid li.first {} 
@@ -1500,7 +1525,7 @@ tr.summary-details-excluded { font-style:italic; }
 .product-view .product-name h1 {
 	font-size:22px;
 	line-height:22px;
-	font-weight:bold;
+	/*font-weight:bold;*/
 }
 .catalog-product-view .col-right{ padding-top:0;}
 .product-view h2 {
@@ -1534,6 +1559,21 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Product Images */
 .product-view .product-img-box {float:left;text-align:center;margin-bottom:30px;width:310px;}
+
+
+.product-view .product-img-box .product-img-sale{
+    position: absolute;
+    right: 4px; top:35px;
+    width: 60px; height: 30px; background-color: #f44336;
+    z-index: 2;
+    color: #fff; 
+    font-size: 24px; line-height: 30px;
+    padding-left: 10px;
+    border-radius: 3px 0px 0px 3px;
+    text-align: left;
+}
+
+
 .col3-layout .product-view .product-img-box { float:none; margin:0 auto; }
 .product-view .product-img-box .product-image {
 	position:relative;
@@ -1614,6 +1654,15 @@ tr.summary-details-excluded { font-style:italic; }
 .product-view .product-shop .price-box .regular-price {} 
 
 .product-view .product-shop .price-box .price { color: #31a32d; font-weight: normal; font-size: 24px; line-height: 24px;}
+
+.product-view .product-shop .price-box .price .old-price{
+    font-size: 24px; 
+    color: #bcbcbc;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 7px;
+}
+
 .product-view .product-shop .price-box .old-price .price {  }
 .product-view .product-shop .availability {display: block; font-size:12px; font-weight:bold; color:#3a3a3a; margin:5px 0;}
 .product-view .product-shop .availability span { display:inline-block; font-size:12px; font-weight:bold; color:#74b436; margin-left:6px;}

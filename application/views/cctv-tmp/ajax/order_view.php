@@ -12,12 +12,27 @@
             <td><input type="text" name="name" /> <font color="#f00" size="3">*</font> </td>
         </tr>
         <tr>
+            <td style="width: 150px;">Фамилия:</td>
+            <td><input type="text" name="sname" /> <font color="#f00" size="3">*</font> </td>
+        </tr>
+        <tr>
+            <td>Отчество:</td>
+            <td><input type="text" name="thname" /> <font color="#f00" size="3">*</font> </td>
+        </tr>
+        <tr>
             <td>Телефон:</td>
-            <td><input type="text" name="phone" value="+380" onkeyup="input_check_phone(this)" /> <font color="#f00" size="3">*</font> </td>
+            <td><input type="text" name="phone" placeholder="+380XXXXXXX"  onkeyup="input_check_phone(this)" /> <font color="#f00" size="3">*</font> </td>
         </tr>
         <tr>
             <td>E-mail:</td>
             <td><input type="text" name="mail" /></td>
+        </tr>
+        <tr>
+            <td id="order_new_post_notice">
+                Склад "Новой Почты":<br />
+                <a href="http://novaposhta.com.ua/frontend/warenhouses/ru" target="_blank" style="font-size: 12px; line-height: 5px;">Списов отделений</a>
+            </td>
+            <td><input type="text" name="sklad" placeholder="Город и № отделения" /> <font color="#f00" size="3">*</font></td>
         </tr>
         <tr>
             <td>Комментарий к заказу:</td>
@@ -33,6 +48,7 @@
                 </div>
             </td>
         </tr>
+        <!--
         <tr>
             <td>Самовывоз (Харьков)</td>
             <td><input type="radio" name="order" value="1" checked="checked" style="width: 20px;" onchange="show_hide_shipping()" /></td>
@@ -44,6 +60,10 @@
                 <?php if($summ < 300 ) echo ' <i>* возможна при сумме заказа от 300 грн.</i> ' ?>
             </td>
         </tr>
+        -->
+        
+        <input type="hidden" value="2" name="order" />
+        
     </table>
     
     <div id="shipping_block">

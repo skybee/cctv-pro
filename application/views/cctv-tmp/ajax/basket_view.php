@@ -19,9 +19,11 @@
                 <div class="ab_title">
                     <a href="/goods/<?= $goods_ar['id'] ?>/<?= $goods_ar['url_name'] ?>/" target="_blank"><?= $goods_ar['name'] ?></a>
                 </div>
+                <!--
                 <div class="ab_description">
                     <?= $goods_ar['short_description'] ?>
                 </div>
+                -->
             </div>
             
             <div class="ab_right_block">

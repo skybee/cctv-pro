@@ -2,6 +2,8 @@
 
     $cnt_goods  = count($goods_list);
     if( $cnt_goods < 1 ) return '';
+
+//    print_r($goods_list);
 ?>
 
 
@@ -18,6 +20,11 @@
     ?>
     <li class="item <?php if($ii == 0) echo 'first'; ?> col-xs-12 col-sm-4">
         <div class="grid_wrap">
+            
+            <?php if($goods_list[$i]['price_changed'] === true):?>
+            <div class="grid_wrap_sale">- <?=$goods_list[$i]['region_discount']?>%</div>
+            <?php endif;?>
+            
             <a href="<?=$goodsLink;?>" title="<?=$tagGoodsName?>" class="product-image" target="_blank">
                 <span class="googs-img-tbl" >
                     <span class="googs-img-tr">

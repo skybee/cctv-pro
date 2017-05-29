@@ -3,7 +3,7 @@
 <script type="text/javascript">
     jQuery.post('/ajax/goods/set_top/', {id:<?=$goods_info['id']?>, ref: document.referrer});
 </script>
-    
+
 
 <div class="col-main col-xs-12 col-sm-9">
     <div class="padding-s">
@@ -17,6 +17,11 @@
                         <input type="hidden" name="related_product" id="related-products-field" value=""/>
                     </div>
                     <div class="product-img-box">
+                        
+                        <?php if($goods_info['price_changed'] === true):?>
+                        <div class="product-img-sale">- <?=$goods_info['region_discount']?>%</div>
+                        <?php endif;?>
+                        
                         <div class="product-box-customs">
                             <p class="product-image">
                                 <?php
@@ -47,6 +52,11 @@
                             
                             <span class="regular-price" id="product-price-5">
                                 <span class="price">
+                                    <?php if($goods_info['price_changed'] === true):?>
+                                    <span class="old-price">
+                                        &nbsp;<?= $goods_info['old_price'] ?>&nbsp;
+                                    </span>
+                                    <?php endif;?>
                                     <?= price_explode( $goods_info['price'] ) ?>
                                 </span> 
                             </span>

@@ -180,7 +180,7 @@ ul.sf-menu li li li.sfHover ul {
 .block.block-side-nav .block-title { margin-bottom:5px; }
 .block.block-side-nav .block-content { padding:0; border:0; border-radius:0; }
 .sf-menu-phone2 { overflow:hidden; }
-.sf-menu-phone2 li { position:relative; font-size:16px;	line-height:normal;	font-weight:bold; text-transform:uppercase; margin:0 0 5px; }
+.sf-menu-phone2 li { position:relative; font-size:16px;	line-height:normal;	font-weight:normal; text-transform:capitalize; margin:0 0 5px; }
 .sf-menu-phone2 li.last {  }
 .sf-menu-phone2 > li > a { 
 	display:block;
@@ -196,7 +196,7 @@ ul.sf-menu li li li.sfHover ul {
 	padding:11px 15px 13px 15px;
 	color:#2e2e2e;	
 	text-decoration:none; 
-	border-radius:4px;
+	border-radius:2px;
 }
 .sf-menu-phone2 > li:hover > a {
 	border:solid 1px #292929;

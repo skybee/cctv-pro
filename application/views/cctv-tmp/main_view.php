@@ -170,7 +170,7 @@
                                                     <div class="logo">
                                                         <strong>CCTV Pro - Магазин Систем Видеонаблюдения</strong>
                                                         <a href="/" title="CCTV Pro - Магазин Систем Видеонаблюдения">
-                                                            <img src="/img/logo.png" alt="CCTV Pro - Магазин Систем Видеонаблюдения"/>
+                                                            <img src="/img/logo-2.png" alt="CCTV Pro - Магазин Систем Видеонаблюдения"/>
                                                         </a>
                                                     </div>
 

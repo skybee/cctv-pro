@@ -4,7 +4,7 @@ class Discount_lib{
     private $city = false, 
             $cookie_name = 'user_city',
             $cookie_expire = 36000,
-            $not_discount_city = array('not-UA','Kharkov','Kiev'),
+            $not_discount_city = array('not-UA','Kharkov','Kharkiv','Kiev','Kyiv'),
             $check_discount = 'undefined',
             $real_price = 0,
             $discount_exist = false;

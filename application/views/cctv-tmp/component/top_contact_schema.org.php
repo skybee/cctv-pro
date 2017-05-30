@@ -12,9 +12,9 @@
         <span itemprop="email">mail@cctv-pro.com.ua</span> <br />
         <span itemprop="address">г. Харьков, ул. Шатилова Дача 4 </span> 
     </div>
-    <div class="top_contact_icon">
+<!--    <div class="top_contact_icon">
         <i class="fa fa-calendar fa-2x"></i><br />
         <i class="fa fa-envelope-o fa-2x"></i><br />
         <i class="fa fa-home fa-2x"></i>
-    </div>
+    </div>-->
 </div>

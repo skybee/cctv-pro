@@ -179,7 +179,9 @@ ul.sf-menu li li li.sfHover ul {
 .block.last_block.block-side-nav { margin-bottom:25px; }
 .block.block-side-nav .block-title { margin-bottom:5px; }
 .block.block-side-nav .block-content { padding:0; border:0; border-radius:0; }
-.sf-menu-phone2 { overflow:hidden; }
+.sf-menu-phone2 { 
+    /*overflow:hidden;*/ 
+}
 .sf-menu-phone2 li { position:relative; font-size:16px;	line-height:normal;	font-weight:normal; text-transform:capitalize; margin:0 0 5px; }
 .sf-menu-phone2 li.last {  }
 .sf-menu-phone2 > li > a { 

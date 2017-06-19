@@ -65,7 +65,7 @@
         <input type="hidden" value="2" name="order" />
         
     </table>
-    
+    <!--
     <div id="shipping_block">
         <table>
             <tr>
@@ -86,6 +86,7 @@
             </tr>
         </table>
     </div>
+    -->
 </div>
 </form>
 

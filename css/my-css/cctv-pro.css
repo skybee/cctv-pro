@@ -128,7 +128,7 @@ a:hover{text-decoration: underline;}
 
 
 /* <CATEGORY MENU> */
-.sf-menu-phone2 li{ font-size: 16px;}
+.sf-menu-phone2 li{ font-size: 17px;}
 .sf-menu-phone2 > li > a{transition: none;}
 .sf-menu-phone2 > li:hover > a{
     border-radius: 2px;
@@ -177,7 +177,7 @@ a:hover{text-decoration: underline;}
     
 }
 .sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a{
-    font-size: 16px;
+    font-size: 17px;
     color: #007AC2;
 }
 /* </CATEGORY MENU> */

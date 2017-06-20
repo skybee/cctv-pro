@@ -476,7 +476,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 .breadcrumbs li { float:left; }
 .breadcrumbs li a {text-decoration:none; }
 .breadcrumbs li a:hover {}
-.breadcrumbs li span {	display:inline-block;	margin:0 8px 0 6px;}
+.breadcrumbs li span {	display:inline-block;	margin:0 8px 0 6px; font-size: 17px;}
 .breadcrumbs li strong {font-weight:normal; }
 
 /* CCTV BreadCrumbs */
@@ -524,9 +524,9 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 }
 .bcl_a_block a{ 
     display: block; 
-    height: 30px;
+    height: 32px;
     overflow: hidden;
-    line-height: 30px;
+    line-height: 32px;
     border-bottom: 1px solid #d4dadd;
     text-decoration: none !important;
 }

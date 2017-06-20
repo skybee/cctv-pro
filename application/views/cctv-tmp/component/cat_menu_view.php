@@ -40,7 +40,8 @@
             
             <li class="level0 nav-1 first level-top">
                 <a href="/category/<?=$data['url_name']?>/" class="level-top <?=$this_cat_btn;?>">
-                    <span><?=$data['name']?></span>
+                    <span class="sf_arow"></span>
+                    <span class="sf_btn_name"><?=$data['name']?></span>
                 </a>
                 
                 

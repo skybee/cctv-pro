@@ -53,6 +53,7 @@
                     <link rel="stylesheet" type="text/css" href="/css/my-css/jquery-ui.css" media="all"/>
                     <link rel="stylesheet" type="text/css" href="/css/my-css/popup.css" media="all"/>
                     <link rel="stylesheet" type="text/css" href="/css/my-css/cctv-pro.css" media="all"/>
+                    <link rel="stylesheet" type="text/css" href="/css/my-css/blue_tpl.css" media="all"/>
                     <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"/>
 
 

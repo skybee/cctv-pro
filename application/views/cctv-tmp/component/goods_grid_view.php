@@ -46,7 +46,8 @@
                         <span class="price"><?=price_explode($goods_list[$i]['price'])?></span> </span>
                 </div>
                 <div class="actions">
-                    <a href="javascript:void(0)" class="btn-cart" onclick="send_post({id:'<?=$goods_list[$i]['id']?>',cnt: 1 }, '/ajax/basket/show_basket/', {title:'Добавление товара в корзину',content:'loader'})">
+                    <a title="Положить в Корзину" href="javascript:void(0)" class="btn-cart" onclick="send_post({id:'<?=$goods_list[$i]['id']?>',cnt: 1 }, '/ajax/basket/show_basket/', {title:'Добавление товара в корзину',content:'loader'})">
+                        <i class="fa fa-shopping-cart fa-2x"></i>
                         <span>В Корзину</span>
                     </a>
 <!--                    <div class="btn_details">

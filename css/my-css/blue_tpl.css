@@ -143,6 +143,84 @@ a:hover,
 
 
 .breadcrumb_fixed_active{
-    border-top: 5px solid #007DC6;
+    border-top: 3px solid #007DC6;
     height: auto;
+}
+
+
+.products-grid .btn-cart{
+    background: url(/img/btn_cart_orange.png) no-repeat 0 0;
+    position: relative;
+    /*box-shadow: 0 0 0px 2px #ffd500;*/
+    border-radius: 3px;
+}
+.products-grid .btn-cart:hover{
+    background: url(/img/btn_cart_orange.png) no-repeat 0 -42px;
+    /*box-shadow: 0 0 0px 2px #007DC6;*/
+}
+.products-grid .btn-cart span{
+    background: url(/img/btn_cart_orange.png) no-repeat 100% 0;
+}
+
+.products-grid .btn-cart:hover span{
+    background: url(/img/btn_cart_orange.png) no-repeat 100% -42px;
+    color: #007DC6;
+}
+.products-grid .btn-cart i.fa-shopping-cart{
+    position: absolute;
+    top: 7px; left: 7px;
+    font-size: 30px;
+    
+    color:#007DC6;
+}
+.products-grid .btn-cart:hover i.fa-shopping-cart{
+    color:#fff;
+}
+
+
+.menu_basket_info{
+        background: url(/img/bg_cart_orange.png) no-repeat;
+}
+.menu_basket_info:hover{
+    box-shadow: 0 0 0px 3px #ffd500;
+}
+.menu_basket_info #menu_basket_price{
+    color: #ffd500;
+}
+
+
+button.button > span, .category-text-block .show_full_text, .show-goods-descript-btn{
+/*    border: 1px solid #2c9028; 
+    background: #01a708;  Old browsers 
+    background: -moz-linear-gradient(top, #01a708 0%, #2c9028 100%);  FF3.6+ 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01a708), color-stop(100%, #2c9028));  Chrome,Safari4+ 
+    background: -webkit-linear-gradient(top, #01a708 0%, #2c9028 100%);  Chrome10+,Safari5.1+ 
+    background: -o-linear-gradient(top, #01a708 0%, #2c9028 100%);  Opera 11.10+ 
+    background: -ms-linear-gradient(top, #01a708 0%, #2c9028 100%);  IE10+ 
+    background: linear-gradient(to bottom, #01a708 0%, #2c9028 100%);  W3C 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a708', endColorstr='#2c9028', GradientType=0 );  IE6-9 */
+    
+    border: solid 1px #cecece;
+    background: #ececec; /* Old browsers */
+    background: -moz-linear-gradient(top, #ececec 0%, #e5e5e5 100%);  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #e5e5e5));  
+    background: -webkit-linear-gradient(top, #ececec 0%, #e5e5e5 100%);  
+    background: -o-linear-gradient(top, #ececec 0%, #e5e5e5 100%); 
+    background: -ms-linear-gradient(top, #ececec 0%, #e5e5e5 100%);  
+    background: linear-gradient(to bottom, #ececec 0%, #e5e5e5 100%);  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0082ce', endColorstr='#0072b5', GradientType=0 ); 
+    
+}
+.category-text-block .show_full_text div,
+#full_description_footer .show-goods-descript-btn{
+    color: #007DC6;
+}
+.category-text-block .show_full_text:hover div,
+#full_description_footer .show-goods-descript-btn:hover{
+    color: #fff;
+}
+
+.product-view .product-name h1{
+    border-left: 5px solid #ffd500;
+    padding-left:10px;
 }

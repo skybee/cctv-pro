@@ -5,8 +5,17 @@ Change green to blue des
 
 a:hover,
 .products-grid .product-name a:hover,
-.sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a:hover{
+.sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a:hover,
+.header .links li a:hover{
     color: #f59c00;
+    transition: none;
+    text-decoration: underline;
+}
+a,
+.products-grid .product-name a,
+.sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a,
+.header .links li a{
+    transition: none;
 }
 .products-grid .product-name a:hover,
 .sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a:hover{
@@ -96,30 +105,35 @@ a:hover,
 
 .add-to-cart > button.button > span{
     border: 2px solid #fff;
+    border-radius: 0 4px 4px 0;
+    border-left-width: 0;
     line-height: 40px;
+    /*color: #007dc6;*/
     
     background: #ffd500; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd500), color-stop(100%, #f59c00)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #ffd500 0%, #f59c00 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a708', endColorstr='#2c9028', GradientType=0 ); /* IE6-9 */
-
-    border-radius: 3px;
 }
 
 .add-to-cart > button.button:hover > span{
-    border: 2px solid #fff; 
+    /*border: 2px solid #fff;*/ 
     background: #ffdf40; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffdf40), color-stop(100%, #f2ca00)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #ffdf40 0%, #f2ca00 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a708', endColorstr='#2c9028', GradientType=0 ); /* IE6-9 */
+}
+
+.add-to-cart > button.button > span.btn_buy_img{
+    border-left-width: 2px;
+    border-right: 0;
+    background-color: #007dc6;
+    border-radius: 4px 0px 0px 4px;;
+    padding: 5px 15px 0px 12px;
+    line-height: 45px;
+}
+
+.add-to-cart > button.button > span.btn_buy_img > i.fa-shopping-cart{
+    color: #FBFBFB;
+    font-size: 32px;
+}
+
+.add-to-cart > button.button:hover > span.btn_buy_img > i.fa-shopping-cart{
+    color: #ffdf40;
 }
 
 .add-to-box .add-to-cart{
@@ -171,7 +185,8 @@ a:hover,
     top: 7px; left: 7px;
     font-size: 30px;
     
-    color:#007DC6;
+    /*color:#007DC6;*/
+    color: #f7f0ca;
 }
 .products-grid .btn-cart:hover i.fa-shopping-cart{
     color:#fff;
@@ -224,3 +239,68 @@ button.button > span, .category-text-block .show_full_text, .show-goods-descript
     border-left: 5px solid #ffd500;
     padding-left:10px;
 }
+
+
+/* === <HEADER> ===*/
+body{
+    background: #fff;
+}
+
+.cms-index-index .main-container{
+    border-color: #ececec;
+}
+
+.header-container{
+    max-width: 100%;
+    background-image: none;
+    background-color: #fbfbfb;
+    border: none;
+    border-top: 5px solid #007dc6;
+    border-bottom: 3px solid #007dc6;
+    padding: 0;
+}
+
+.top_contact_info{
+    margin-top: 10px;
+    height: 100px;
+}
+
+.top_contact_info .top_contact_address,
+.top_contact_info .top_contact_phone,
+.top_contact_info .top_contact_icon{
+    line-height: 30px;
+}
+.top_contact_info .top_contact_icon{
+    /*opacity: 0.3;*/
+    color: #9bb3c1;
+}
+.top_contact_info .top_contact_icon i{
+    color: #9bb3c1;
+}
+.top_contact_info .top_contact_icon i.fa-phone{
+    line-height: 32px;
+    color: #9bb3c1;
+}
+
+
+.header .quick-access{
+    background: none;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.header .links li {
+    background-image: none;
+    border-right: 1px solid #d8d8d8;
+    padding: 0px 21px 0px 0;
+}
+.header .links li.last{
+    border-right: none;
+}
+
+.header .links li a{
+    color:#007AC2;
+}
+.header .logo{
+    margin-top: 32px;
+}
+/* === </HEADER> ===*/

@@ -477,6 +477,9 @@ button.button:hover > span,
         
 .rnd-goods-descript{
     margin-top: 20px;
+    opacity: 0.8;
+    font-size: 0.9em;
+    line-height: 1.3em;
 }
         
 @media screen and (max-width: 770px){

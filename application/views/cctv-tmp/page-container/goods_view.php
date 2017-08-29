@@ -96,7 +96,7 @@
                             <div class="std goods_full_description">
                                 <?= $goods_info['description']?>
                                 
-                                <?php if($like_video): ?>
+                                <?php if($like_video=0): ?>
                                 <h2 style="margin-top: 50px;">Видео из YouTube</h2>
                                 <div class="goods-youtube-block" id="like-video-container">
                                     <?php foreach ($like_video as $lVideo): ?>

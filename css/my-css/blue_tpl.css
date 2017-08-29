@@ -182,10 +182,12 @@ a,
     position: relative;
     /*box-shadow: 0 0 0px 2px #ffd500;*/
     border-radius: 3px;
+    opacity: 0.8;
 }
 .products-grid .btn-cart:hover{
     background: url(/img/btn_cart_orange.png) no-repeat 0 -42px;
     /*box-shadow: 0 0 0px 2px #306BBA;*/
+    opacity: 1;
 }
 .products-grid .btn-cart span{
     background: url(/img/btn_cart_orange.png) no-repeat 100% 0;

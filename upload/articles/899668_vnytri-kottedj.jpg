@@ -1,0 +1,1343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="keywords" content="видеонаблюдение, цифровая система видеонаблюдения, интегрированная система безопасности, платформа безопасности, ОПС, СКД, Интеллект, ВидеоIQ 7, SmartВидео, Axxon Smart IP" />
+<meta name="description" content="Компания ITV - разработчик программного обеспечения, служащего основой для построения интеллектуальных систем видеонаблюдения и комплексных систем безопасности. В линейке продуктов ITV есть как профессиональные системы для предприятий крупного масштаба, так и цифровые системы видеонаблюдения для небольших офисов и даже домашнего использования." />
+<link href="/bitrix/templates/sky_3_col/components/bitrix/system.auth.form/template/style.css?1255362417" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/.default/components/bitrix/main.site.selector/template/style.css?1334310742" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/sky_3_col/components/bitrix/menu/template/style.css?1306352002" type="text/css" rel="stylesheet" />
+<link href="/bitrix/components/bitrix/breadcrumb/templates/.default/style.css" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/sky_3_col/components/sky/treemenu/template/style.css?1318189075" type="text/css" rel="stylesheet" />
+<link href="/bitrix/components/bitrix/main.map/templates/.default/style.css?1196685539" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/sky_3_col/components/bitrix/menu/bottom_menu/style.css?1255362393" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/sky_3_col/styles.css" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/sky_3_col/template_styles.css" type="text/css" rel="stylesheet" />
+
+<title>404 - HTTP not found</title>
+<link href="/bitrix/templates/sky_3_col/news-style.css" rel="stylesheet" type="text/css" />
+<link href="/bitrix/templates/sky_3_col/template_styles.add.css" rel="stylesheet" type="text/css" />
+<link href="/bitrix/templates/sky_3_col/components/bitrix/menu/template/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="/bitrix/templates/sky_3_col/lightbox.css" type="text/css" media="screen" />
+<!--[if lte IE 6]><link rel="stylesheet" href="/bitrix/templates/sky_3_col/style-ie6.css" type="text/css" media="screen" /><![endif]-->
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="/bitrix/templates/.default/components/bitrix/main.site.selector/template/jqueryslidemenu.js"></script>
+<script type="text/javascript" src="/bitrix/templates/sky_3_col/fancybox/jquery.fancybox.js?v=2.1.0"></script>
+<link rel="stylesheet" type="text/css" href="/bitrix/templates/sky_3_col/fancybox/jquery.fancybox.css?v=2.1.0" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
+
+</head>
+<body>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div id="panel"></div>
+
+<div class="top"> 	 
+  <div class="center"> 
+    <div class="top-logo"> 
+		        <div class="logo"><a href="/"><img width="296" height="48" src="/bitrix/templates/sky_3_col/images/itv-axxon-logo.png" alt="itv-axxon logo" /></a></div>
+ 
+	</div> 
+   
+    <div class="top-menu">
+   	  <div class="user-menu">    	
+                <div id="login-form">
+                
+                <div align="right" class="login-form-decor" style="background: url(/bitrix/templates/sky_3_col/components/bitrix/system.auth.form/template/images/login_form_tlc.gif) no-repeat left top"><img src="/bitrix/templates/sky_3_col/components/bitrix/system.auth.form/template/images/login_form_trc.gif" alt="" width="200" height="7"></div>
+                <form method="post" target="_top" action="/auth.php" name="login" id="loginform">
+                                            <input type='hidden' name='backurl' value='/upload/vnytri-kottedj.jpg' />
+                                                            <input type="hidden" name="AUTH_FORM" value="Y">
+                    <input type="hidden" name="TYPE" value="AUTH">
+                
+                    <table border="0" cellpadding="0" cellspacing="0" width="200">
+                                                    <tr>
+                                <td></td>
+                                <td style="padding-bottom: 11px; text-align: right;"><b><a href="/register.php?backurl=/upload/vnytri-kottedj.jpg">Зарегистрироваться</a></b></td>
+                            </tr>
+                                                    <tr>
+                                <td>Логин:</td>
+                                <td><input type="text" name="USER_LOGIN" maxlength="50"  size="15" style="width: 95%;" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Пароль:</td>
+                                <td><input type="password" name="USER_PASSWORD" maxlength="50" size="15" style="width: 95%;"></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td><input type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y" id="a" class="b"> <label for="USER_REMEMBER">запомнить меня</label></td>
+                            </tr>
+                                                    <tr>
+                                <td colspan="2" style="padding-top: 5px">
+                                    <input type="submit" name="Login" value="Войти">
+                                    <input type="button" value="Закрыть" onClick="if (document.getElementById('login-form')) { document.getElementById('login-form').style.display = 'none'; } return false;">
+                                </td>
+                            </tr>
+                
+                            <tr>
+                                <td colspan="2" style="padding-top: 5px"><a href="/auth.php?forgot_password=yes&amp;backurl=%2Fupload%2Fvnytri-kottedj.jpg">Забыли свой пароль?</a></td>
+                            </tr>
+                    </table>    
+                </form>
+                
+                <div align="right" class="login-form-decor" style="background: url(/bitrix/templates/sky_3_col/components/bitrix/system.auth.form/template/images/login_form_blc.gif) no-repeat left top"><img src="/bitrix/templates/sky_3_col/components/bitrix/system.auth.form/template/images/login_form_brc.gif" alt="" width="200" height="7"></div>
+                </div>
+                
+                <div class="login-info" style="float: left;"><strong><a href="/auth.php?backurl=/upload/vnytri-kottedj.jpg" onclick="if (document.getElementById('login-form').style.display == 'block') { document.getElementById('login-form').style.display = 'none';} else { document.getElementById('login-form').style.display = 'block'; document.forms['login'].USER_LOGIN.focus();} return false;">Войти&#8230;</a></strong></div>
+
+	
+    	<div class="login-info">&nbsp; | <a href="/forum/">Форум</a> |&nbsp;</div>
+		<div class="login-info"><a href="/partners/prices/">Прайс-лист</a></div>
+		<div class="login-info">&nbsp;| <a href="/contacts.php">Обратная связь</a>&nbsp;|&nbsp;</div><div class="login-info"><a href="/support/training/schedule.php">Курсы</a></div></div>
+         <div class="additional-user-menu">
+           <div class="language">
+    	<div id="mainSiteSelect" class="jqueryslidemenu">
+        <ul>
+            <li><a href="#">
+                <img src="/images/russia.png" style="vertical-align: top; margin-right: 8px;" />
+                                                                                                                                                    Русский                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
+                <ul>
+                                    
+					                    <li><a href="http://www.axxonsoft.com"><img src="/images/en.png" style="vertical-align: top; margin-right: 8px;" /> English</a></li>                    <li><a href="http://www.axxonsoft.com/de/"><img src="/images/germany.png" style="vertical-align: top; margin-right: 8px;" /> Deutsch</a></li>                    <li><a href="http://www.axxonsoft.com/sp/"><img src="/images/spain.png" style="vertical-align: top; margin-right: 8px;" /> &#69;&#115;&#112;&#97;&#241;&#111;&#108;</a></li>                    <li><a href="http://www.axxonsoft.com/pl/"><img src="/images/poland.png" style="vertical-align: top; margin-right: 8px;" /> Polski</a></li>                    <li><a href="http://www.axxonsoft.com/cn/"><img src="/images/China_flag.png" style="vertical-align: top; margin-right: 8px;" /> &#20013;&#22283;&#30340;</a></li>                    <li><a href="http://www.axxonsoft.com/rs/"><img src="/images/serbia.png" style="vertical-align: top; margin-right: 8px;" /> &#1057;&#1088;&#1087;&#1089;&#1082;&#1080;</a></li>                    <li><a href="http://www.axxonsoft.com/bg/"><img src="/images/bg_flag.png" style="vertical-align: top; margin-right: 8px;" /> &#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;</a></li>                 
+                
+                <li><a href="http://www.axxonsmart.com/hr/"><img src="/images/croatia.png" style="vertical-align: top; margin-right: 8px;" /> Hrvatski</a></li>                <li><a href="http://www.axxonsmart.com/cz/"><img src="/images/czech.png" style="vertical-align: top; margin-right: 8px;" /> &#269;&#101;&#115;&#107;&#253;&#10;</a></li>				<li><a href="http://www.axxonsmart.com/lv/"><img src="/images/latvia.png" style="vertical-align: top; margin-right: 8px;" /> Latvijas</a></li>                </ul>
+            </li>
+        </ul>
+        <br style="clear: left" />
+        </div>
+
+<!--<select name="site" onChange="location.href=this.value" style="margin-left: 10px; width: 170px;">--></div>
+           <div class="search">        	
+<div class="search-form">
+<form action="/search/">
+	<input id="search" name="q" type="text" value="" size="15" maxlength="50" />
+    <input id="go" name="s" type="submit" value="" />
+	<!--<table border="0" cellspacing="0" cellpadding="2" align="center">
+		<tr>
+			<td align="center"><input type="text" name="q" value="" size="15" maxlength="50" /></td>
+		</tr>
+		<tr>
+			<td align="right"><input name="s" type="submit" value="РџРѕРёСЃРє" /></td>
+		</tr>
+	</table>-->
+</form>
+</div></div>
+         </div>
+    </div>
+       
+      <div class="main-menu"><script src="/bitrix/templates/sky_3_col/components/bitrix/menu/template/script.js?1255362397" type="text/javascript"></script>
+<ul id="horizontal-multilevel-menu">
+
+
+	
+	
+					<li><a href="/security_platform/" class="
+                        	root-item
+                        ">Платформа безопасности</a>
+				<ul>
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/security_platform/consolidation.php">Консолидация</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/security_platform/effectiveness.php">Эффективность</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/security_platform/productivity.php">Производительность</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/security_platform/it_element.php">Элемент ИТ-инфраструктуры</a></li>
+			
+		
+	
+	
+
+			</ul></li>	
+	
+					<li><a href="/products/" class="
+                        	root-item
+                        ">Продукты</a>
+				<ul>
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/axxon_smart_ip/">Axxon Smart IP</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/intellect/">Интеллект</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/intellect_light/">Интеллект Лайт</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/videoiq7/">ВидеоIQ7</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/smartvideo/">SmartВидео</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/image_processing/">Видеоаналитика</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/matrix/">Matrix</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/ip/">IP-оборудование</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/products/analog_devices/">Другое оборудование</a></li>
+			
+		
+	
+	
+
+			</ul></li>	
+	
+					<li><a href="/verticals/" class="
+                        	root-item
+                        ">Решения</a>
+				<ul>
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/verticals/retail.php">Торговля</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/verticals/banks.php">Банки</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/verticals/traffic.php">Транспорт</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/verticals/railway.php">Железнодорожный транспорт</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/verticals/homeland_security/">Безопасный город</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/verticals/oil_and_gaz.php">Нефть и газ</a></li>
+			
+		
+	
+	
+
+			</ul></li>	
+	
+					<li><a href="/case_studies/" class="
+                        	root-item
+                        ">Истории успеха</a>
+				<ul>
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/case_studies/financial/">Банки</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/case_studies/homeland_security/">Национальная безопасность</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/case_studies/culture/">Образование и культура</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/case_studies/retail/">Торговля</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/case_studies/transportation/">Транспорт и логистика</a></li>
+			
+		
+	
+	
+
+			</ul></li>	
+	
+					<li><a href="/partners/" class="
+                        	root-item
+                        ">Партнеры</a>
+				<ul>
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/partners/security_integrators.php">Стать партнером</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/partners/software_developers.php">Технологические партнеры</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/partners/enginneering.php">Проектировщики</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/partners/partner_services/">Услуги для партнеров</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/partners/partner_locator/">Найти партнера</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/partners/prices/">Рекомендованные цены</a></li>
+			
+		
+	
+	
+
+			</ul></li>	
+	
+					<li><a href="/support/" class="
+                        	root-item
+                        ">Поддержка</a>
+				<ul>
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/support/training/">Курсы и семинары</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/support/documentation/">Документация</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/support/materials/">Буклеты</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/support/downloads/">Дистрибутивы</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/support/certificates.php">Сертификаты</a></li>
+			
+		
+	
+	
+
+			</ul></li>	
+	
+					<li><a href="/company/" class="
+                        	root-item
+                        ">О компании</a>
+				<ul>
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/company/press_centre/">Пресс-центр</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/company/management.php">Руководство</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/company/careers/">Вакансии</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/company/offices_rus.php">Офисы ITV | AxxonSoft в России и СНГ</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/company/offices.php">Международные офисы ITV | AxxonSoft</a></li>
+			
+		
+	
+	
+
+			</ul></li>	
+	
+		
+							<li><a href="/offices.php" class="
+                                    root-item
+                                ">Контакты</a></li>
+			
+		
+	
+	
+
+
+</ul>
+<div class="menu-clear-left"></div>
+</div> 
+	</div>
+<div class="top-header"><div class="header">      <h1>404 - HTTP not found</h1>
+    </div>
+  </div>
+	<div class="top-breadcrumbs">	      <ul class="breadcrumb-navigation"><li><a href="/" title="Главная">Главная</a></li></ul>    
+	  </div>
+</div>
+
+<div class="mid">
+  <div class="center">
+    <div class="leftside-page">
+      <div class="leftside-page-content">
+      			
+ 
+
+             </div>
+    </div>
+    <div class="center-page">
+      <div class="center-page-content"><table class="map-columns">
+<tr>
+	<td>
+<ul class="map-level-0">
+<li><a href="/security_platform/">Платформа безопасности</a>		
+		</li>
+<ul class="map-level-1">
+<li><a href="/security_platform/consolidation.php">Консолидация</a>		
+		</li>
+<li><a href="/security_platform/effectiveness.php">Эффективность</a>		
+		</li>
+<li><a href="/security_platform/productivity.php">Производительность</a>		
+		</li>
+<li><a href="/security_platform/it_element.php">Элемент ИТ-инфраструктуры</a>		
+		</li>
+</ul>
+<li><a href="/products/">Продукты</a>		
+		</li>
+<ul class="map-level-1">
+<li><a href="/products/axxon_smart_ip/">Axxon Smart IP</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/products/axxon_smart_ip/connection/">Подключение</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/axxon_smart_ip/connection/video_stream.php">Видеопотоки</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/connection/support_ip.php">Детекторы IP-камер</a>		
+		</li>
+</ul>
+<li><a href="/products/axxon_smart_ip/interface/">Интерфейс пользователя</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/axxon_smart_ip/interface/control.php">Увеличение изображения</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/interface/alarm.php">Тревоги</a>		
+		</li>
+</ul>
+<li><a href="/products/axxon_smart_ip/archive/">Архив видеозаписей</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/axxon_smart_ip/archive/axxonfs.php">AxxonFS</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/archive/vmda.php">VMDA</a>		
+		</li>
+</ul>
+<li><a href="/products/axxon_smart_ip/videosystem/">Видеоаналитика</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/axxon_smart_ip/videosystem/video.php">Настройки видеодетекторов</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/videosystem/reaction.php">Реакция на события</a>		
+		</li>
+</ul>
+<li><a href="/products/axxon_smart_ip/search.php">Поиск с интеллектом</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/time_compressor.php">Time Compressor</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/interactive_map.php">Интерактивная карта</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/price.php">Модификации и цены</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/technical.php">Технические характеристики</a>		
+		</li>
+<li><a href="/products/axxon_smart_ip/smart_start.php">Axxon Smart Start</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/">Интеллект</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/products/intellect/autointellect/">Авто-Интеллект</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/autointellect/trafficcontrol/">Контроль проезда ТС</a>		
+		</li>
+<li><a href="/products/intellect/autointellect/speedcontrol/">Нарушения скоростного режима</a>		
+		</li>
+<li><a href="/products/intellect/autointellect/trafficlight/">Проезд на красный свет</a>		
+		</li>
+<li><a href="/products/intellect/autointellect/banreport/">Выписка штрафов</a>		
+		</li>
+<li><a href="/products/intellect/autointellect/atms/">АСУДД</a>		
+		</li>
+<li><a href="/products/intellect/autointellect/specifications/">Технические характеристики</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/posintellect/">POS-Интеллект</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/posintellect/functions.php">Функции ККО</a>		
+		</li>
+<li><a href="/products/intellect/posintellect/web.php">Веб-отчеты</a>		
+		</li>
+<li><a href="/products/intellect/posintellect/video.php">Видеонаблюдение</a>		
+		</li>
+<li><a href="/products/intellect/posintellect/integration.php">Интеграция</a>		
+		</li>
+<li><a href="/products/intellect/posintellect/specifications.php">Технические характеристики</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/faceintellect/">Face-Интеллект</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/faceintellect/recognition.php">Распознавание лиц</a>		
+		</li>
+<li><a href="/products/intellect/faceintellect/search.php">Поиск похожих лиц</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/key_features/">Основные особенности</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/key_features/modularity.php">Модульность</a>		
+		</li>
+<li><a href="/products/intellect/key_features/universal.php">Универсальность</a>		
+		</li>
+<li><a href="/products/intellect/key_features/intelligent.php">Интеллектуальность</a>		
+		</li>
+<li><a href="/products/intellect/key_features/openness.php">Открытость</a>		
+		</li>
+<li><a href="/products/intellect/key_features/scalability.php">Масштабируемость</a>		
+		</li>
+<li><a href="/products/intellect/key_features/flexibility.php">Легкость настройки</a>		
+		</li>
+<li><a href="/products/intellect/key_features/productivity.php">Производительность</a>		
+		</li>
+<li><a href="/products/intellect/key_features/cost_effectiveness.php">Рентабельность</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/core_functionality/">Функциональные возможности</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/core_functionality/video.php">Видеонаблюдение</a>		
+		</li>
+<li><a href="/products/intellect/core_functionality/streams.php">Управление потоками в сети</a>		
+		</li>
+<li><a href="/products/intellect/core_functionality/audio.php">Аудиорегистрация</a>		
+		</li>
+<li><a href="/products/intellect/core_functionality/ip_video.php">Работа с IP-устройствами</a>		
+		</li>
+<li><a href="/products/intellect/core_functionality/handheld.php">Мобильный доступ</a>		
+		</li>
+<li><a href="/products/intellect/core_functionality/automation.php">Автоматизация</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/additional_modules/">Программные модули</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/additional_modules/pos/">Модуль контроля кассовых операций</a>		
+		</li>
+<li><a href="/products/intellect/additional_modules/acs/">СКУД и ОПС</a>		
+		</li>
+<li><a href="/products/intellect/additional_modules/face_recognition">Распознавание и поиск похожих лиц</a>		
+		</li>
+<li><a href="/products/intellect/additional_modules/lpr/">Распознавание номеров ТС</a>		
+		</li>
+<li><a href="/products/intellect/additional_modules/traffic_control">Контроль транспортных потоков</a>		
+		</li>
+<li><a href="/products/intellect/additional_modules/rw/">Распознавание номеров вагонов</a>		
+		</li>
+<li><a href="/products/intellect/additional_modules/atm">Защита банкоматов</a>		
+		</li>
+<li><a href="/products/intellect/additional_modules/work_time_calculation/">Учет рабочего времени</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/integration/">Интеграция</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/integration/acfa.php">ОПС, СКУД</a>		
+		</li>
+<li><a href="/products/intellect/integration/ptz.php">Телеметрия</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/videoanalysis/">Видеоаналитика</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/videoanalysis/videodetectors.php">Видеодетекторы</a>		
+		</li>
+<li><a href="/products/intellect/videoanalysis/search.php">Поиск с интеллектом</a>		
+		</li>
+</ul>
+<li><a href="/products/intellect/specifications/">Спецификации</a>		
+		</li>
+<li><a href="/products/intellect/boards/">Платы видеоввода</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect/boards/video_boards.php">Платы без аппаратной компрессии</a>		
+		</li>
+<li><a href="/products/intellect/boards/boards_hw.php">Платы с аппаратной компрессией</a>		
+		</li>
+</ul>
+</ul>
+<li><a href="/products/intellect_light/">Интеллект Лайт</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/products/intellect_light/retail/">Решение для торговли</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/intellect_light/retail/functions/">Функции ККО</a>		
+		</li>
+<li><a href="/products/intellect_light/retail/video/">Видеонаблюдение</a>		
+		</li>
+<li><a href="/products/intellect_light/retail/integration/">Интеграция</a>		
+		</li>
+<li><a href="/products/intellect_light/retail/specifications/">Технические характеристики</a>		
+		</li>
+</ul>
+</ul>
+<li><a href="/products/videoiq7/">ВидеоIQ7</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/products/videoiq7/key_features/">Основные особенности</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/videoiq7/key_features/profitability.php">Рентабельность</a>		
+		</li>
+<li><a href="/products/videoiq7/key_features/reliability.php">Надежность и производительность</a>		
+		</li>
+<li><a href="/products/videoiq7/key_features/future.php">Будущее сегодня</a>		
+		</li>
+</ul>
+<li><a href="/products/videoiq7/core_functionality/">Функциональные возможности</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/videoiq7/core_functionality/frame_merge.php">FrameMerge</a>		
+		</li>
+<li><a href="/products/videoiq7/core_functionality/moment_quest.php">MomentQuest</a>		
+		</li>
+<li><a href="/products/videoiq7/core_functionality/wisebar.php">WiseBar</a>		
+		</li>
+<li><a href="/products/videoiq7/core_functionality/detectors.php">Видеодетекторы</a>		
+		</li>
+<li><a href="/products/videoiq7/core_functionality/ptz_tracer.php">PTZTracer</a>		
+		</li>
+</ul>
+<li><a href="/products/videoiq7/reliability/">Надежность и производительность</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/videoiq7/reliability/data_synchro.php">DataSynchro</a>		
+		</li>
+</ul>
+<li><a href="/products/videoiq7/cameras.php">Работа с сетевым оборудованием</a>		
+		</li>
+<li><a href="/products/videoiq7/pos.php">Интеграция с POS</a>		
+		</li>
+<li><a href="/products/videoiq7/security_anywhere/">SmartView</a>		
+		</li>
+<li><a href="/products/videoiq7/specifications/">Спецификации</a>		
+		</li>
+</ul>
+<li><a href="/products/smartvideo/">SmartВидео</a>		
+		</li>
+<li><a href="/products/image_processing/">Видеоаналитика</a>		
+		</li>
+<li><a href="/products/matrix/">Matrix</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/products/matrix/matrix_ix/">Matrix iX</a>		
+		</li>
+<li><a href="/products/matrix/matrix_vx/">Matrix vX</a>		
+		</li>
+</ul>
+<li><a href="/products/ip/">IP-оборудование</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/products/ip/IPDrom/">IPDROM</a>		
+		</li>
+<li><a href="/products/ip/StreamLabs/">Stream Labs</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/products/ip/StreamLabs/wavecam_mx/">WaveCam MX </a>		
+		</li>
+<li><a href="/products/ip/StreamLabs/wavecam_m5/">WaveCam M5</a>		
+		</li>
+<li><a href="/products/ip/StreamLabs/waveserver/">WaveServer 1501</a>		
+		</li>
+<li><a href="/products/ip/StreamLabs/waveserver_1554/">WaveServer 1554</a>		
+		</li>
+<li><a href="/products/ip/StreamLabs/waveserver_enterprise/">WaveServer Enterprise</a>		
+		</li>
+</ul>
+</ul>
+<li><a href="/products/analog_devices/">Другое оборудование</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/products/analog_devices/videomax.php">VIDEOMAX</a>		
+		</li>
+<li><a href="/products/analog_devices/videomax_uzv.php">VIDEOMAX-УЗВ-01</a>		
+		</li>
+</ul>
+</ul>
+</ul></td><td><ul class="map-level-0">
+<li><a href="/verticals/">Решения</a>		
+		</li>
+<ul class="map-level-1">
+<li><a href="/verticals/retail.php">Торговля</a>		
+		</li>
+<li><a href="/verticals/banks.php">Банки</a>		
+		</li>
+<li><a href="/verticals/traffic.php">Транспорт</a>		
+		</li>
+<li><a href="/verticals/railway.php">Железнодорожный транспорт</a>		
+		</li>
+<li><a href="/verticals/homeland_security/">Безопасный город</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/verticals/homeland_security/platform.php">Платформа</a>		
+		</li>
+<li><a href="/verticals/homeland_security/structure.php">Структура внедрения</a>		
+		</li>
+<li><a href="/verticals/homeland_security/intellectualisation.php">Интеллектуализация</a>		
+		</li>
+<li><a href="/verticals/homeland_security/video_surveillance.php">Видеонаблюдение</a>		
+		</li>
+<li><a href="/verticals/homeland_security/alarms.php">СКУД, сигнализации, учет ресурсов</a>		
+		</li>
+<li><a href="/verticals/homeland_security/communication.php">Экстренная голосовая связь</a>		
+		</li>
+<li><a href="/verticals/homeland_security/gis.php">ГИС</a>		
+		</li>
+</ul>
+<li><a href="/verticals/oil_and_gaz.php">Нефть и газ</a>		
+		</li>
+</ul>
+<li><a href="/case_studies/">Истории успеха</a>		
+		</li>
+<ul class="map-level-1">
+<li><a href="/case_studies/financial/">Банки</a>		
+		</li>
+<li><a href="/case_studies/homeland_security/">Национальная безопасность</a>		
+		</li>
+<li><a href="/case_studies/culture/">Образование и культура</a>		
+		</li>
+<li><a href="/case_studies/retail/">Торговля</a>		
+		</li>
+<li><a href="/case_studies/transportation/">Транспорт и логистика</a>		
+		</li>
+</ul>
+<li><a href="/partners/">Партнеры</a>		
+		</li>
+<ul class="map-level-1">
+<li><a href="/partners/security_integrators.php">Стать партнером</a>		
+		</li>
+<li><a href="/partners/software_developers.php">Технологические партнеры</a>		
+		</li>
+<li><a href="/partners/enginneering.php">Проектировщики</a>		
+		</li>
+<li><a href="/partners/partner_services/">Услуги для партнеров</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/partners/partner_services/supply/">Комплексная поставка оборудования</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/partners/partner_services/supply/platforms.php">Компьютерные платформы</a>		
+		</li>
+<li><a href="/partners/partner_services/supply/devices.php">Оборудование CCTV</a>		
+		</li>
+</ul>
+<li><a href="/partners/partner_services/consulting/">Консалтинг</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/partners/partner_services/consulting/scheme.php">Схема оказания услуг</a>		
+		</li>
+<li><a href="/partners/partner_services/consulting/services.php">Услуги ITV | Expert</a>		
+		</li>
+<li><a href="/partners/partner_services/consulting/seminar.php">Семинары</a>		
+		</li>
+<li><a href="/partners/partner_services/consulting/feedback/">Отзывы о ITV Expert</a>		
+		</li>
+</ul>
+<li><a href="/partners/partner_services/training.php">Обучение</a>		
+		</li>
+<li><a href="/partners/partner_services/tech_support.php">Техническая поддержка</a>		
+		</li>
+<li><a href="/partners/partner_services/marketing_support.php">Маркетинговая поддержка</a>		
+		</li>
+</ul>
+<li><a href="/partners/partner_locator/">Найти партнера</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/partners/partner_locator/technological_partners/">Технологические партнеры</a>		
+		</li>
+</ul>
+<li><a href="/partners/prices/">Рекомендованные цены</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/partners/prices/intellect.php">Интеллект</a>		
+		</li>
+<li><a href="/partners/prices/intellect_light.php">Интеллект Лайт</a>		
+		</li>
+<li><a href="/partners/prices/firepro.php">FirePro</a>		
+		</li>
+</ul>
+</ul>
+<li><a href="/support/">Поддержка</a>		
+		</li>
+<ul class="map-level-1">
+<li><a href="/support/training/">Курсы и семинары</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/support/training/curriculum.php">Программы семинаров</a>		
+		</li>
+<li><a href="/support/training/study_centers.php">Центры обучения</a>		
+		</li>
+<li><a href="/support/training/schedule.php">Расписание</a>		
+		</li>
+<li><a href="/support/training/application_form.php">Заявка на участие</a>		
+		</li>
+<li><a href="/support/training/trained.php">Обученные</a>		
+		</li>
+<li><a href="/partners/partner_services/consulting/seminar.php">Семинары ITV EXPERT</a>		
+		</li>
+</ul>
+<li><a href="/support/documentation/">Документация</a>		
+		</li>
+<li><a href="/support/materials/">Буклеты</a>		
+		</li>
+<li><a href="/support/downloads/">Дистрибутивы</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/support/downloads/axxonsmartip.php">Axxon Smart IP</a>		
+		</li>
+<li><a href="/support/downloads/intellect.php">Интеллект</a>		
+		</li>
+<li><a href="/support/downloads/videoiq7.php">ВидеоIQ7</a>		
+		</li>
+<li><a href="/support/downloads/smartvideo.php">SmartВидео</a>		
+		</li>
+<li><a href="/support/downloads/drivers-pack.php">Drivers Pack</a>		
+		</li>
+<li><a href="/support/downloads/additional.php">Дополнительно</a>		
+		</li>
+</ul>
+<li><a href="/support/certificates.php">Сертификаты</a>		
+		</li>
+</ul>
+<li><a href="/company/">О компании</a>		
+		</li>
+<ul class="map-level-1">
+<li><a href="/company/press_centre/">Пресс-центр</a>		
+		</li>
+<ul class="map-level-2">
+<li><a href="/company/press_centre/news/">Новости компании</a>		
+		</li>
+<li><a href="/company/press_centre/partner_news/">Новости партнеров</a>		
+		</li>
+<li><a href="/company/press_centre/events/">Выставки и семинары</a>		
+		</li>
+<li><a href="/company/press_centre/articles/">Публикации</a>		
+		</li>
+<li><a href="/innova/">Журнал INNOVA</a>		
+		</li>
+<ul class="map-level-3">
+<li><a href="/innova/subscribe.php">Подписка</a>		
+		</li>
+<li><a href="/innova/issues/">Выпуски журнала</a>		
+		</li>
+<li><a href="/innova/articles/">Статьи</a>		
+		</li>
+<li><a href="/innova/cooperation.php">Сотрудничество</a>		
+		</li>
+</ul>
+<li><a href="/video/">Видео</a>		
+		</li>
+</ul>
+<li><a href="/company/management.php">Руководство</a>		
+		</li>
+<li><a href="/company/careers/">Вакансии</a>		
+		</li>
+<li><a href="/company/offices_rus.php">Офисы ITV | AxxonSoft в России и СНГ</a>		
+		</li>
+<li><a href="/company/offices.php">Международные офисы ITV | AxxonSoft</a>		
+		</li>
+</ul>
+<li><a href="/offices.php">Контакты</a>		
+		</li>
+</ul>
+	</td>
+</tr>
+</table>
+		</div>
+    </div>
+    <div class="rightside-page">
+    	<div class="rightside-page-content">
+                        		</div>
+    </div>
+  </div>
+</div>
+
+<br class="clearfloat" />
+    <div class="bottom-new-box">
+        <div class="bottom-menu-box">
+         
+          <script src="/bitrix/templates/sky_3_col/components/bitrix/menu/bottom_menu/script.js?1255362393" type="text/javascript"></script>
+
+
+<ul id="horizontal-bottom-menu">
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/security_platform/" class="root-item">Платформа безопасности</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/products/" class="root-item">Продукты</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/verticals/" class="root-item">Решения</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/case_studies/" class="root-item">Истории успеха</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/partners/" class="root-item">Партнеры</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/support/" class="root-item">Поддержка</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/company/" class="root-item">О компании</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+	
+
+	
+
+		
+
+			
+				<li><a href="/offices.php" class="root-item">Контакты</a></li>
+			
+
+		
+
+	
+
+	
+
+
+
+
+
+</ul>
+<div class="menu-clear-left"></div>
+            
+        </div>
+    </div>
+
+    
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+    <div class="bottom-social">
+        <div class="bottom-social-link">
+        	<div class="bottom-social-link-left">
+            	<a href="/products/axxon_smart_ip/smart_start.php"><img src="/bitrix/templates/sky_3_col/images/bottom_asip_download.png" style="border: none;" /></a>
+            </div>
+            <div class="bottom-social-link-right">
+            	<a target="_blank" href="http://www.facebook.com/ITVGroup"><img src="/bitrix/templates/sky_3_col/images/bottom_facebook_logo.jpg" /></a>
+                <a href="skype:skype.itv.ru?call"><img src="/bitrix/templates/sky_3_col/images/bottom_skype_logo.jpg" /></a>
+                <a target="_blank" href="https://twitter.com/#!/ITV_AxxonSoft"><img src="/bitrix/templates/sky_3_col/images/bottom_twitter_logo.jpg" /></a>
+                <a target="_blank" href="http://www.linkedin.com/groups/FREE-16-channel-VMS-from-4133198"><img src="/bitrix/templates/sky_3_col/images/bottom_linkedin_logo.jpg" /></a>
+                <a target="_blank" href="http://www.itv.ru/itv.news"><img src="/bitrix/templates/sky_3_col/images/bottom_rss_logo.jpg" /></a>
+                <a target="_blank" href="http://www.youtube.com/user/ITVAXXON"><img src="/bitrix/templates/sky_3_col/images/bottom_youtube_logo.jpg" /></a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="bottom-social-link-bottom"></div><br>
+<span class="clearfloat"></span>
+	        <div class="copyright">&#169 Copyright 2003 - 2011 | <strong>Москва +7 (495) 775-29-29. <a href="/company/offices_rus.php">Другие регионы</a></strong></div>
+	    <!-- google analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18470166-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- /google analytics -->
+    <!-- Yandex.Metrika -->
+    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+    <div style="display:none;"><script type="text/javascript">
+    try { var yaCounter1425183 = new Ya.Metrika(1425183);
+    yaCounter1425183.clickmap();
+    yaCounter1425183.trackLinks({external: true});
+    } catch(e){}
+    </script></div>
+    <noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/1425183" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika -->
+    <!-- sec.ru -->
+    <script language="javascript">
+    sid=66496;
+    rf=escape(document.referrer); rn=Math.random();
+    ct="<a href='http://top100.sec.ru/jump.cfm?sid=66496' target=_blank>";
+    ct+="<img style='float: left; margin: 0 0 10px 10px;' src=http://top100.sec.ru/fscounter.cfm";
+    ct+="?sid="+sid+"&rf="+rf+"&rn="+rn+" ";
+    ct+="width=88 height=31 border=0 alt='top100.sec.ru'>";
+    ct+="</a>";
+    document.write(ct);
+    </script>
+    <noscript>
+    <a href="http://top100.sec.ru/jump.cfm?sid=66496">
+    <img src="http://top100.sec.ru/fscounter.cfm?sid=66496"
+    width=88 height=31 border=0 alt='top100.sec.ru'></a>
+    </noscript>
+    <!-- /sec.ru -->
+    
+    <!--LiveInternet counter--><script type="text/javascript"><!--
+    document.write("<a href='http://www.liveinternet.ru/click' "+
+    "target=_blank><img style='float: left; margin: 0 0 10px 10px;' src='//counter.yadro.ru/hit?t15.1;r"+
+    escape(document.referrer)+((typeof(screen)=="undefined")?"":
+    ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+    screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+    ";"+Math.random()+
+    "' alt='' title='LiveInternet: показано число просмотров за 24"+
+    " часа, посетителей за 24 часа и за сегодня' "+
+    "border='0' width='88' height='31'><\/a>")
+    //--></script><!--/LiveInternet-->
+    
+        
+
+<div class="clearfloat"></div>
+</div>
+
+</body>
+</html>

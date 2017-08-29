@@ -59,9 +59,9 @@
     }
 
 
-    if($_SERVER['HTTP_X_REAL_IP']=='178.150.106.188'){
-        sleep(rand(1,15));
-    }
+//    if($_SERVER['HTTP_X_REAL_IP']=='178.150.106.188'){
+//        sleep(rand(1,15));
+//    }
 
     if($_SERVER['HTTP_HOST'] == 'cctv-pro.lh' || $_SERVER['HTTP_X_REAL_IP'] == '109.86.165.207')
     {

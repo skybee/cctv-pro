@@ -77,6 +77,7 @@
                                     <input type="text" name="cnt_goods" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty"/>
                                 </div>
                                 <button type="button" title="Add to Cart" class="button btn-cart" onclick="send_post({id:'<?=$goods_info['id']?>',cnt: jQuery('input[name=cnt_goods]').attr('value') }, '/ajax/basket/show_basket/', {title:'Добавление товара в корзину',content:'loader'});">
+                                    <span class="btn_buy_img"><i class="fa fa-shopping-cart fa-2x"></i></span>
                                     <span><span>КУПИТЬ</span></span>
                                 </button>
                             </div>

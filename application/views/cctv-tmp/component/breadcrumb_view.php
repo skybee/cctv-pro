@@ -15,7 +15,7 @@
                     </div>
                 </div>
             <? endif; ?>
-            <span>&gt;</span>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
         </li>
         
         <?php foreach ($breadcrumb_list as $breadcrumb_ar): ?>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             <? endif; ?>
-            <span>&gt;</span>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
         </li>
         <!--<li>&gt;</li>-->
         <?php endforeach; ?>

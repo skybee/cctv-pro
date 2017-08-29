@@ -1,23 +1,12 @@
 /*
 Change green to blue des
 
-Blue TOP Color: #007DC6 | #306BBA
-
 */
 
 a:hover,
 .products-grid .product-name a:hover,
-.sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a:hover,
-.header .links li a:hover{
+.sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a:hover{
     color: #f59c00;
-    transition: none;
-    text-decoration: underline;
-}
-a,
-.products-grid .product-name a,
-.sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a,
-.header .links li a{
-    transition: none;
 }
 .products-grid .product-name a:hover,
 .sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links ul li a:hover{
@@ -29,27 +18,18 @@ a,
     color: #f59c00;
 }
 
-.banners_block .banner:hover{
-    background: #306BBA; /* Old browsers */
-    background: -moz-linear-gradient(top, #3577ce  0%, #306BBA 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3577ce), color-stop(100%, #306BBA)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #3577ce 0%, #306BBA 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #3577ce 0%, #306BBA 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #3577ce 0%, #306BBA 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #3577ce 0%, #306BBA 100%); /* W3C */ 
-}
 
 .block .block-title{
     
-    border: 1px solid #306BBA; 
-    background: #306BBA; /* Old browsers */
-    background: -moz-linear-gradient(top, #3577ce  0%, #306BBA 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3577ce), color-stop(100%, #306BBA)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #3577ce 0%, #306BBA 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #3577ce 0%, #306BBA 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #3577ce 0%, #306BBA 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #3577ce 0%, #306BBA 100%); /* W3C */
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3577ce', endColorstr='#306BBA', GradientType=0 );  IE6-9 */  
+    border: 1px solid #0072b5; 
+    background: #0082ce; /* Old browsers */
+    background: -moz-linear-gradient(top, #0082ce  0%, #0072b5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0082ce), color-stop(100%, #0072b5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #0082ce 0%, #0072b5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #0082ce 0%, #0072b5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #0082ce 0%, #0072b5 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #0082ce 0%, #0072b5 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0082ce', endColorstr='#0072b5', GradientType=0 );  IE6-9 */  
 
 }
 
@@ -106,7 +86,7 @@ a,
 
 
 .sf-menu-phone2 .sub-cat-menu .sub-cat-menu-links{
-   border-top: 5px solid #306BBA; 
+   border-top: 5px solid #007DC6; 
    box-shadow: 0px 3px 8px 2px rgba(204, 204, 204, 0.7);
 }
 
@@ -116,35 +96,30 @@ a,
 
 .add-to-cart > button.button > span{
     border: 2px solid #fff;
-    border-radius: 0 4px 4px 0;
-    border-left-width: 0;
     line-height: 40px;
-    color: #306BBA;
     
     background: #ffd500; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd500), color-stop(100%, #f59c00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffd500 0%, #f59c00 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffd500 0%, #f59c00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a708', endColorstr='#2c9028', GradientType=0 ); /* IE6-9 */
+
+    border-radius: 3px;
 }
 
 .add-to-cart > button.button:hover > span{
-    /*border: 2px solid #fff;*/ 
+    border: 2px solid #fff; 
     background: #ffdf40; /* Old browsers */
-}
-
-.add-to-cart > button.button > span.btn_buy_img{
-    border-left-width: 2px;
-    border-right: 0;
-    background-color: #306BBA;
-    border-radius: 4px 0px 0px 4px;;
-    padding: 5px 15px 0px 12px;
-    line-height: 45px;
-}
-
-.add-to-cart > button.button > span.btn_buy_img > i.fa-shopping-cart{
-    color: #FBFBFB;
-    font-size: 32px;
-}
-
-.add-to-cart > button.button:hover > span.btn_buy_img > i.fa-shopping-cart{
-    color: #ffdf40;
+    background: -moz-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffdf40), color-stop(100%, #f2ca00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffdf40 0%, #f2ca00 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffdf40 0%, #f2ca00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a708', endColorstr='#2c9028', GradientType=0 ); /* IE6-9 */
 }
 
 .add-to-box .add-to-cart{
@@ -168,14 +143,10 @@ a,
 
 
 .breadcrumb_fixed_active{
-    border-top: 3px solid #306BBA;
+    border-top: 3px solid #007DC6;
     height: auto;
 }
-.breadcrumbs li span i{
-    color: #306BBA;
-    font-size: 1em;
-    opacity: 0.5;
-}
+
 
 .products-grid .btn-cart{
     background: url(/img/btn_cart_orange.png) no-repeat 0 0;
@@ -185,7 +156,7 @@ a,
 }
 .products-grid .btn-cart:hover{
     background: url(/img/btn_cart_orange.png) no-repeat 0 -42px;
-    /*box-shadow: 0 0 0px 2px #306BBA;*/
+    /*box-shadow: 0 0 0px 2px #007DC6;*/
 }
 .products-grid .btn-cart span{
     background: url(/img/btn_cart_orange.png) no-repeat 100% 0;
@@ -193,15 +164,14 @@ a,
 
 .products-grid .btn-cart:hover span{
     background: url(/img/btn_cart_orange.png) no-repeat 100% -42px;
-    color: #306BBA;
+    color: #007DC6;
 }
 .products-grid .btn-cart i.fa-shopping-cart{
     position: absolute;
     top: 7px; left: 7px;
     font-size: 30px;
     
-    /*color:#306BBA;*/
-    color: #f7f0ca;
+    color:#007DC6;
 }
 .products-grid .btn-cart:hover i.fa-shopping-cart{
     color:#fff;
@@ -243,7 +213,7 @@ button.button > span, .category-text-block .show_full_text, .show-goods-descript
 }
 .category-text-block .show_full_text div,
 #full_description_footer .show-goods-descript-btn{
-    color: #306BBA;
+    color: #007DC6;
 }
 .category-text-block .show_full_text:hover div,
 #full_description_footer .show-goods-descript-btn:hover{
@@ -254,68 +224,3 @@ button.button > span, .category-text-block .show_full_text, .show-goods-descript
     border-left: 5px solid #ffd500;
     padding-left:10px;
 }
-
-
-/* === <HEADER> ===*/
-body{
-    background: #fff;
-}
-
-.cms-index-index .main-container{
-    border-color: #ececec;
-}
-
-.header-container{
-    max-width: 100%;
-    background-image: none;
-    background-color: #fbfbfb;
-    border: none;
-    border-top: 5px solid #306BBA;
-    border-bottom: 3px solid #306BBA;
-    padding: 0;
-}
-
-.top_contact_info{
-    margin-top: 10px;
-    height: 100px;
-}
-
-.top_contact_info .top_contact_address,
-.top_contact_info .top_contact_phone,
-.top_contact_info .top_contact_icon{
-    line-height: 30px;
-}
-.top_contact_info .top_contact_icon{
-    /*opacity: 0.3;*/
-    color: #9bb3c1;
-}
-.top_contact_info .top_contact_icon i{
-    color: #9bb3c1;
-}
-.top_contact_info .top_contact_icon i.fa-phone{
-    line-height: 32px;
-    color: #9bb3c1;
-}
-
-
-.header .quick-access{
-    background: none;
-    border-bottom: 1px solid #d8d8d8;
-}
-
-.header .links li {
-    background-image: none;
-    border-right: 1px solid #d8d8d8;
-    padding: 0px 21px 0px 0;
-}
-.header .links li.last{
-    border-right: none;
-}
-
-.header .links li a{
-    color:#007AC2;
-}
-.header .logo{
-    margin-top: 32px;
-}
-/* === </HEADER> ===*/

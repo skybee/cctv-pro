@@ -168,22 +168,48 @@
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <div class="header">
-                                                    
-                                                    <div class="quick-access">
-                                                        <?= $top_menu; ?>
-                                                    </div>
-                                                    
                                                     <div class="logo">
                                                         <strong>CCTV Pro - Магазин Систем Видеонаблюдения</strong>
                                                         <a href="/" title="CCTV Pro - Магазин Систем Видеонаблюдения">
-                                                            <img src="/img/logo_blue.png" alt="CCTV Pro - Магазин Систем Видеонаблюдения"/>
+                                                            <img src="/img/logo-2.png" alt="CCTV Pro - Магазин Систем Видеонаблюдения"/>
                                                         </a>
                                                     </div>
 
                                                     <?= $top_contact ?>
+
+                                                    <!--                                                <div class="right_head">
+                                                                                                        <div class="block-cart-header">
+                                                                                                            <h3>Cart:</h3>
+                                                                                                            <div class="block-content">
+                                                                                                                <div class="empty">
+                                                                                                                    <div>0 item(s) - <span class="price">$0.00</span></div>
+                                                                                                                    <div class="cart-content">
+                                                                                                                        You have no items in your shopping cart. </div>
+                                                                                                                </div>
+                                                                                                                <p class="mini-cart"><strong>0</strong></p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <form id="search_mini_form" action="" method="get">
+                                                                                                            <div class="form-search">
+                                                                                                                <label for="search">Search:</label>
+                                                                                                                <input id="search" type="text" name="q" value="" class="input-text"/>
+                                                                                                                <button type="submit" title="Search" class="button"><strong><i class="fa fa-search"></i></strong></button>
+                                                                                                                <div id="search_autocomplete" class="search-autocomplete"></div>
                                                     
+                                                                                                                <script type="text/javascript">
+                                                                                                                            //<![CDATA[
+                                                                                                                            var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+                                                                                                                            searchForm.initAutocomplete('', 'search_autocomplete');
+                                                                                                                            //]]>
+                                                                                                                </script>
+                                                                                                            </div>
+                                                                                                        </form>
+                                                                                                        <style>.ajaxsearch{border:solid #CCCCCC 1px}.ajaxsearch .suggest{background:#0A263D;color:#B4B4B4}.ajaxsearch .suggest .amount{color:#FF0000}.ajaxsearch .preview{background:#ffffff}.ajaxsearch .preview a{color:#1B43AC}.ajaxsearch .preview .description{color:#0A263D}.ajaxsearch .preview img{float:left;border:solid 1px #CCC}.header .form-search .ajaxsearch li.selected{background-color:#FBFBFB}</style> 
+                                                                                                    </div>-->
                                                     <div class="clear"></div>
-                                                    
+                                                    <div class="quick-access">
+                                                        <?= $top_menu; ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

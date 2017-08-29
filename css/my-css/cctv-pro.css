@@ -35,7 +35,7 @@ a:hover{text-decoration: underline;}
     float: right;
     height: 140px;
     
-/*    text-shadow:-0   -2px 0   #FFFFFF,
+    text-shadow:-0   -2px 0   #FFFFFF,
 		 0   -2px 0   #FFFFFF,
 		-0    2px 0   #FFFFFF,
 		 0    2px 0   #FFFFFF,
@@ -58,7 +58,7 @@ a:hover{text-decoration: underline;}
 		-2px -2px 0   #FFFFFF,
 		 2px -2px 0   #FFFFFF,
 		-2px  2px 0   #FFFFFF,
-		 2px  2px 0   #FFFFFF;*/
+		 2px  2px 0   #FFFFFF;
 }
 .top_contact_info div{
     float: right;

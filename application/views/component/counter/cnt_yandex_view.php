@@ -3,7 +3,7 @@
 <div style="overflow: hidden; height: 0px; width: 0px">
     
     <!-- Yandex.Metrika counter -->
-    <!--
+    
     <script type="text/javascript">
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
@@ -23,7 +23,8 @@
                 f = function () { n.parentNode.insertBefore(s, n); };
             s.type = "text/javascript";
             s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            //s.src = "https://mc.yandex.ru/metrika/watch.js";
+            s.src = "https://d31j93rd8oukbv.cloudfront.net/metrika/watch_ua.js";
 
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
@@ -31,7 +32,7 @@
         })(document, window, "yandex_metrika_callbacks");
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/43153494" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    -->
+    
     <!-- /Yandex.Metrika counter -->
     
 </div>
